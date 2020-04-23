@@ -6,6 +6,7 @@ export interface IRecipe extends Document {
   type: string;
   number_of_persons: number;
   ingredients: string[];
+  ustensils: string[]
   preparation: string;
   dressing: string;
   cooking: string;

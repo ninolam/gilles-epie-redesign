@@ -24,6 +24,7 @@ class RecipeController {
     recipe.type = req.body.type;
     recipe.number_of_persons = req.body.number_of_persons;
     recipe.ingredients = req.body.ingredients;
+    recipe.ustensils = req.body.ustensils;
     recipe.preparation = req.body.preparation;
     recipe.dressing = req.body.dressing;
     recipe.cooking = req.body.cooking;
