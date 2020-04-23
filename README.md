@@ -59,7 +59,9 @@ chmod +x ./.githooks/commit-msg
 #### Install & Run
 
 ```bash
-npm i && npm start
+cd client
+npm i
+npm start
 ```
 
 ### API
@@ -72,10 +74,18 @@ npm i && npm start
 
 #### Install & Run
 
+Shell 1:
+
 ```bash
+cd api
+cp .env.sample .env
 npm i 
-mongod
 npm start
+```
+Shell 2:
+
+```
+mongod
 ```
 
 ## IV - Team
