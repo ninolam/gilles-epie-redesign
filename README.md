@@ -15,12 +15,17 @@
   - [IV - Team](#iv---team)
   - [V - License](#v---license)
 
+> As part of a group project at hetic, we are responsible for redesigning and developing a portfolio. Our choice turned to [Gille Epié](http://www.gillesepie.com/).
+
 ## I - Install
 
 ```bash
 git clone https://github.com/blyndusk/gilles-epie-redesign.git
-git config core.hooksPath .githooks
+# set executable our own commit message rules
 chmod +x ./.githooks/commit-msg
+# add custom config to the git environment
+git config core.hooksPath .githooks
+
 ```
 
 ## II - Workflow Rules
@@ -64,12 +69,13 @@ npm i
 npm start
 ```
 
+The client app will run on port `3000`.
+
 ### API
 
 #### Stack
 
 - [NodeJS](https://nodejs.org/)
-- [PostMan](https://www.postman.com/)
 - [MongoDb](https://www.mongodb.com/)
 
 #### Install & Run
@@ -87,6 +93,8 @@ Shell 2:
 ```
 mongod
 ```
+
+The application will run on port `27017`.
 
 ## IV - Team
 
