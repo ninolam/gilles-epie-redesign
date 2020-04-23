@@ -1,9 +1,10 @@
-name: CI Workflow
+name: Server CI Workflow
 on:
   push:
+  pull_request:
     branches:
       - develop
-  pull_request:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
