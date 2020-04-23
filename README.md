@@ -18,7 +18,7 @@
 ## I - Install
 
 ```bash
-git clone https://github.com/blyndusk/repo-template.git
+git clone https://github.com/blyndusk/gilles-epie-pf.git
 git config core.hooksPath .githooks
 chmod +x ./.githooks/commit-msg
 ```
