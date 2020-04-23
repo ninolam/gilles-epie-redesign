@@ -1,23 +1,16 @@
 var mongoose = require("mongoose");
 
-// Setup schema
 var recipeSchema = mongoose.Schema({
-  name: {
+  title: {
     type: String,
     required: true,
   },
-  type: {
-    type: String,
-    required: false,
-  },
-  number_of_persons: {
-    type: Number,
-    required: false,
-  },
-  image: {
+  picture_url: {
     type: String,
     required: true,
   },
+  type: String,
+  number_of_persons: Number,
   ingredients: {
     type: [String],
     required: true,
@@ -26,9 +19,9 @@ var recipeSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  cooking: String,
 });
 
-// Export Recipe model
 var Recipe = (module.exports = mongoose.model("recipe", recipeSchema));
 
 module.exports.get = function (callback, limit) {

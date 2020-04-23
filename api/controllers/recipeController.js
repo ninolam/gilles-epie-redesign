@@ -1,4 +1,5 @@
-// Import recipe model
+// contactController.js
+// Import contact model
 Recipe = require("../models/recipeModel");
 // Handle index actions
 exports.index = function (req, res) {
@@ -16,43 +17,49 @@ exports.index = function (req, res) {
     });
   });
 };
-// Handle create recipe actions
-exports.create = function (req, res) {
+// Handle create contact actions
+exports.new = function (req, res) {
   var recipe = new Recipe();
-  recipe.name = req.body.name ? req.body.name : recipe.name;
+  recipe.title = req.body.title ? req.body.title : recipe.title;
+  recipe.picture_url = req.body.picture_url;
   recipe.type = req.body.type;
   recipe.number_of_persons = req.body.number_of_persons;
   recipe.ingredients = req.body.ingredients;
   recipe.preparation = req.body.preparation;
-  // save the recipe and check for errors
+  recipe.cooking = req.body.cooking;
+  // save the contact and check for errors
   recipe.save(function (err) {
-    // if (err)
-    //     res.json(err);
+    // Check for validation error
+    if (err) res.json(err);
+    else
+      res.json({
+        message: "New recipe created!",
+        data: recipe,
+      });
+  });
+};
+// Handle view contact info
+exports.view = function (req, res) {
+  Recipe.findById(req.params.recipe_id, function (err, contact) {
+    if (err) res.send(err);
     res.json({
-      message: "New recipe created!",
+      message: "Contact details loading..",
       data: recipe,
     });
   });
 };
-// Handle view recipe info
-exports.read = function (req, res) {
+// Handle update contact info
+exports.update = function (req, res) {
   Recipe.findById(req.params.recipe_id, function (err, recipe) {
     if (err) res.send(err);
-    res.json({
-      message: "Recipe details loading..",
-      data: recipe,
-    });
-  });
-};
-// Handle update recipe info
-exports.update = function (req, res) {
-  recipe.findById(req.params.recipe_id, function (err, recipe) {
-    if (err) res.send(err);
-    recipe.name = req.body.name ? req.body.name : recipe.name;
-    recipe.gender = req.body.gender;
-    recipe.email = req.body.email;
-    recipe.phone = req.body.phone;
-    // save the recipe and check for errors
+    recipe.title = req.body.title ? req.body.title : recipe.title;
+    recipe.picture_url = req.body.picture_url;
+    recipe.type = req.body.type;
+    recipe.number_of_persons = req.body.number_of_persons;
+    recipe.ingredients = req.body.ingredients;
+    recipe.preparation = req.body.preparation;
+    recipe.cooking = req.body.cooking;
+    // save the contact and check for errors
     recipe.save(function (err) {
       if (err) res.json(err);
       res.json({
@@ -62,9 +69,9 @@ exports.update = function (req, res) {
     });
   });
 };
-// Handle delete recipe
+// Handle delete contact
 exports.delete = function (req, res) {
-  Recipe.remove(
+  Recipe.deleteOne(
     {
       _id: req.params.recipe_id,
     },
