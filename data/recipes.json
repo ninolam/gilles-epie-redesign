@@ -1,0 +1,62 @@
+[
+  {
+    "ingredients": [
+      "Une bouteille de vin rouge capiteux",
+      "Un bâton de cannelle",
+      "150g de sucre",
+      "8 graines de coriandre écrasée",
+      "4 grains de poivre noir écrasés",
+      "Un clou de girofle",
+      "Un zeste d'orange",
+      "Une orange",
+      "¼ jus de citron",
+      "Un bouquet de menthe",
+      "Un assortiment de fruits rouges, selon ce que vous aimez\n\n"
+    ],
+    "title": "Soupe de fruits rouges au vin rouge",
+    "picture_url": "https://foo.bar",
+    "type": "Dessert",
+    "number_of_persons": 4,
+    "preparation": "Dans une casserole, chauffer le vin avec des épices et du sucre.\nFaire bouillir, brûler et laisser réduire d'un tiers. Lorsque vous retirez la chaleur du vin, ajoutez le brin de menthe et laissez infuser jusqu'à refroidissement complet. Gardez ensuite au réfrigérateur.\nUne fois refroidi, passez le sirop dans un ustensile chinois.\nRépartir les baies dans des assiettes et verser une louche de sirop sur les fruits. Ajouter la menthe coupée en julienne.\nMaintenant, vous pouvez profiter de la recette du chef, une soupe de fruits rouges."
+  },
+  {
+    "ingredients": [
+      "160g de ragoût de boeuf par personne (entier)",
+      "1,5 litre de vin",
+      "capiteux Olives Taggiache",
+      "3 bottes de basilic",
+      "1 kg de pomme de terre",
+      "Beurre, lait",
+      "Huile d'olive",
+      "4 grosses carottes",
+      "1 cube de bouillon de boeuf",
+      "Moutarde",
+      "Ail, romarin",
+      "Veau en poudre"
+    ],
+    "title": "Ragoût de boeuf à la provençale",
+    "picture_url": "https://foo.bar",
+    "type": "Plat",
+    "number_of_persons": 4,
+    "preparation": "La viande\nRôtir la viande dans une poêle avec de l'huile d'olive\nAjouter l'ail et déglacer avec le vin rouge\nMouiller avec le vin, ajouter le fond de veau, l'eau et le bouquet garnir\nCouvrir et cuire à feu doux pendant 2h30\n\nPurée de carottes et basilic\nPlonger un basilic dans une casserole bouillante d'eau salée, une minute\nRéserver le basilic quelques minutes dans une eau glacée\nRouler à l'huile d'olive dans un mixeur ..\nCuire les pommes de terre pelées à l'eau bouillante\nCuire les carottes pelées à l'eau bouillante avec un cube de bouillon.\nFiltrez les jus de viande et réduisez.\nPasser les pommes de terre dans un moulin, ajouter le beurre et le lait.\nMélanger la purée de pâte de basilic jusqu'à ce qu'elle devienne complètement verte. Faire revenir le boeuf dans une poêle et saupoudrer de jus.\nPasser les carottes au micro-ondes et garnir de moutarde et de persil.",
+    "dressing": "Mettez le morceau de boeuf au centre de l'assiette, nappez de sauce, ajoutez la purée de basilic et les carottes sur le côté. Et déposez les olives sur le boeuf, le poivre concassé et les légumes verts pour la décoration ..\n\nVous pouvez manger la meilleure recette de ragoût de boeuf provençal à l'olive."
+  },
+  {
+    "ingredients": [
+      "1kg de petits pois frais",
+      "Une boîte de truffes hachées",
+      "50g par personne de pâté de crabe",
+      "25cl de crème fouettée",
+      "Cerfeuil ou persil",
+      "Huile d'olive",
+      "Sel, poivre et piment d'Espelette"
+    ],
+    "ustensils": ["Blender"],
+    "title": "Petits pois truffés au crabe",
+    "picture_url": "https://foo.bar",
+    "type": "Entrée",
+    "number_of_persons": 4,
+    "preparation": "blanchir les petits pois, les diviser en deux et conserver une moitié pour plus tard.\nFaire cuire l'autre moitié de pois dans de l'eau bouillante salée pendant 4 minutes.\nÉgoutter et mélanger dans un mélangeur.\nAjouter les pois lentement jusqu'à ce qu'ils soient veloutés.\n\nPréparez la crème fouettée.",
+    "dressing": "Mettre dans l'assiette et ajouter les pois restants, déposer délicatement la chair de crabe et les truffes avec une cuillerée de crème fouettée, décorer de cerfeuil.\nArroser enfin d'un peu d'huile, de poivre et de piment d'Espelette.\n\nVous pouvez manger la recette française de petits pois à la truffe au crabe"
+  }
+]

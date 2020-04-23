@@ -1,6 +1,6 @@
-# Gille Épie Portfolio
+# Gille Epié Portfolio
 
-- [Gille Épie Portfolio](#gille-%c3%89pie-portfolio)
+- [Gille Epié Portfolio](#gille-epi%c3%a9-portfolio)
   - [I - Install](#i---install)
   - [II - Workflow Rules](#ii---workflow-rules)
     - [Branches](#branches)
@@ -18,7 +18,7 @@
 ## I - Install
 
 ```bash
-git clone https://github.com/blyndusk/repo-template.git
+git clone https://github.com/blyndusk/gilles-epie-redesign.git
 git config core.hooksPath .githooks
 chmod +x ./.githooks/commit-msg
 ```
@@ -59,7 +59,9 @@ chmod +x ./.githooks/commit-msg
 #### Install & Run
 
 ```bash
-npm i && npm start
+cd client
+npm i
+npm start
 ```
 
 ### API
@@ -72,10 +74,18 @@ npm i && npm start
 
 #### Install & Run
 
+Shell 1:
+
 ```bash
+cd api
+cp .env.sample .env
 npm i 
-mongod
 npm start
+```
+Shell 2:
+
+```
+mongod
 ```
 
 ## IV - Team
