@@ -1,6 +1,7 @@
-var mongoose = require("mongoose");
+import mongoose, { Schema } from "mongoose";
+import { IRecipe } from "../types";
 
-var recipeSchema = mongoose.Schema({
+const recipeSchema: Schema = new Schema({
   title: {
     type: String,
     required: true,
@@ -15,6 +16,9 @@ var recipeSchema = mongoose.Schema({
     type: [String],
     required: true,
   },
+  ustensils: {
+    type: [String],
+  },
   preparation: {
     type: String,
     required: true,
@@ -23,8 +27,8 @@ var recipeSchema = mongoose.Schema({
   cooking: String,
 });
 
-var Recipe = (module.exports = mongoose.model("recipe", recipeSchema));
+export default mongoose.model<IRecipe>("Recipe", recipeSchema);
 
-module.exports.get = function (callback, limit) {
-  Recipe.find(callback).limit(limit);
-};
+// module.exports.get = function (callback, limit) {
+//   Recipe.find(callback).limit(limit);
+// };

@@ -1,17 +1,15 @@
-const express = require("express");
-const assert = require("assert");
-const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
-const chalk = require("chalk");
-require("dotenv").config();
+import express from "express";
+import assert from "assert";
+import bodyParser from "body-parser";
+import mongoose from "mongoose";
+import chalk from "chalk";
+import dotenv from "dotenv";
+dotenv.config();
+
+import apiRoutes from "./router";
 
 const app = express();
 
-const Recipe = require("./models/recipeModel");
-const apiRoutes = require("./api-routes");
-const data = require("../data/recipes.json");
-
-// Configure bodyparser to handle post requests
 app.use(
   bodyParser.urlencoded({
     extended: true,
@@ -19,13 +17,13 @@ app.use(
 );
 app.use(bodyParser.json());
 
-// connection to database
 mongoose
   .connect(process.env.MONGO_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
   .then((res) => {
+    // tslint:disable-next-line:no-console
     console.log(
       `${chalk.green("[index.js]")} DB (${chalk.blue(
         res.connections[0].name
@@ -33,6 +31,7 @@ mongoose
     );
   })
   .catch((err) => {
+    // tslint:disable-next-line:no-console
     console.log(err.message);
   });
 
@@ -41,7 +40,6 @@ mongoose
 //   assert.equal(1, r.insertedCount);
 // });
 
-// Send message for default URL
 app.get("/", (req, res) => {
   res.send("Hi ! add '/api' in the URL to get the API content.");
 });
@@ -54,6 +52,7 @@ const port = process.env.PORT || process.env.MONGO_PORT;
 
 // Launch app to listen to specified port
 app.listen(port, () => {
+  // tslint:disable-next-line:no-console
   console.log(
     `${chalk.green("[index.js]")} Running API on port ${chalk.blue(port)}`
   );

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "sourceMap": true
+  },
+  "include": ["s./rc/**/*.ts", "src/index.ts"],
+  "exclude": ["node_modules", ".vscode"]
+}
