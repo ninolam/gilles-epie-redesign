@@ -1,6 +1,6 @@
-# Gille Épie Portfolio
+# Gille Epié Portfolio
 
-- [Gille Épie Portfolio](#gille-%c3%89pie-portfolio)
+- [Gille Epié Portfolio](#gille-epi%c3%a9-portfolio)
   - [I - Install](#i---install)
   - [II - Workflow Rules](#ii---workflow-rules)
     - [Branches](#branches)
