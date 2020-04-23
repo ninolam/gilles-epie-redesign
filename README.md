@@ -18,7 +18,7 @@
 ## I - Install
 
 ```bash
-git clone https://github.com/blyndusk/gilles-epie-pf.git
+git clone https://github.com/blyndusk/gilles-epie-redesign.git
 git config core.hooksPath .githooks
 chmod +x ./.githooks/commit-msg
 ```
