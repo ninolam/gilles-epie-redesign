@@ -1,7 +1,19 @@
-# Repo Template
+# Gille Épie Portfolio
 
-- [I - Install](#i---install)
-- [II - Workflow Rules](#ii---workflow-rules)
+- [Gille Épie Portfolio](#gille-%c3%89pie-portfolio)
+  - [I - Install](#i---install)
+  - [II - Workflow Rules](#ii---workflow-rules)
+    - [Branches](#branches)
+    - [Commits](#commits)
+  - [III - App structure](#iii---app-structure)
+    - [Client](#client)
+      - [Stack](#stack)
+      - [Install & Run](#install--run)
+    - [API](#api)
+      - [Stack](#stack-1)
+      - [Install & Run](#install--run-1)
+  - [IV - Team](#iv---team)
+  - [V - License](#v---license)
 
 ## I - Install
 
