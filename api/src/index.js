@@ -9,7 +9,7 @@ const app = express();
 
 const Recipe = require("./models/recipeModel");
 const apiRoutes = require("./api-routes");
-const data = require("../data/recipes.json");
+const data = require("../../data/recipes.json");
 
 // Configure bodyparser to handle post requests
 app.use(
