@@ -44,7 +44,7 @@ chmod +x ./.githooks/commit-msg
 
 - [Reactjs](https://reactjs.org/)
 
-#### Install
+#### Install & Run
 
 ```bash
 npm i && npm start
@@ -57,6 +57,14 @@ npm i && npm start
 - [NodeJS](https://nodejs.org/)
 - [PostMan](https://www.postman.com/)
 - [MongoDb](https://www.mongodb.com/)
+
+#### Install & Run
+
+```bash
+npm i 
+mongod
+npm start
+```
 
 ## IV - Team
 
