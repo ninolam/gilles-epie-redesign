@@ -1,3 +1,5 @@
+const recipeRoute = require("./routes/recipesRoute");
+
 // Initialize express router
 let router = require("express").Router();
 // Set default API response
@@ -7,6 +9,7 @@ router.get("/", function (req, res) {
     message: "Welcome to RESTHub crafted with love!",
   });
 });
+// recipeRoute();
 
 var recipeController = require("./controllers/recipeController");
 // recipe routes

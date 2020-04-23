@@ -19,6 +19,7 @@ var recipeSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  dressing: String,
   cooking: String,
 });
 

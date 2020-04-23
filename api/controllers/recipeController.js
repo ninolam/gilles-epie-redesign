@@ -26,6 +26,7 @@ exports.new = function (req, res) {
   recipe.number_of_persons = req.body.number_of_persons;
   recipe.ingredients = req.body.ingredients;
   recipe.preparation = req.body.preparation;
+  recipe.dressing = req.body.dressing;
   recipe.cooking = req.body.cooking;
   // save the contact and check for errors
   recipe.save(function (err) {
@@ -58,6 +59,7 @@ exports.update = function (req, res) {
     recipe.number_of_persons = req.body.number_of_persons;
     recipe.ingredients = req.body.ingredients;
     recipe.preparation = req.body.preparation;
+    recipe.dressing = req.body.dressing;
     recipe.cooking = req.body.cooking;
     // save the contact and check for errors
     recipe.save(function (err) {

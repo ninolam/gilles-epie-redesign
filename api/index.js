@@ -9,7 +9,7 @@ const app = express();
 
 const Recipe = require("./models/recipeModel");
 const apiRoutes = require("./api-routes");
-const data = require("./data.json");
+const data = require("../data/recipes.json");
 
 // Configure bodyparser to handle post requests
 app.use(
@@ -26,11 +26,14 @@ mongoose
     useNewUrlParser: true,
   })
   .then((res) => {
-    console.log(res.connections[0].name);
-    console.log(chalk.green("[index.js] ") + `DB (${res.connections[0].name}) Connected!`);
+    console.log(
+      `${chalk.green("[index.js]")} DB (${chalk.blue(
+        res.connections[0].name
+      )}) connected`
+    );
   })
   .catch((err) => {
-    console.log(`[index.js] DB Connection Error: ${err.message}`);
+    console.log(err.message);
   });
 
 // Recipe.collection.insertMany([data], function (err, r) {
@@ -51,5 +54,7 @@ const port = process.env.PORT || process.env.MONGO_PORT;
 
 // Launch app to listen to specified port
 app.listen(port, () => {
-  console.log(chalk.green("[index.js] ") + `Running API on port ${port}`);
+  console.log(
+    `${chalk.green("[index.js]")} Running API on port ${chalk.blue(port)}`
+  );
 });
