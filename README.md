@@ -1,6 +1,7 @@
 # Repo Template
 
-> Repo Template
+- [I - Install](#i---install)
+- [II - Workflow Rules](#ii---workflow-rules)
 
 ## I - Install
 
@@ -29,8 +30,44 @@ chmod +x ./.githooks/commit-msg
   - `feature/name-of-the-feature`
   - `fix/name-of-the-fix`
 
-### III - Commits
+### Commits
 
 - **ALWAYS** name your commit message like that
   - `"(Add|Fix|Remove|Update): commit message"`
 - **ELSE**, your commit will be rejected by **Git hooks**
+
+## III - App structure
+
+### Client
+
+#### Stack
+
+- [Reactjs](https://reactjs.org/)
+
+#### Install
+
+```bash
+npm i && npm start
+```
+
+### API
+
+#### Stack
+
+- [NodeJS](https://nodejs.org/)
+- [PostMan](https://www.postman.com/)
+- [MongoDb](https://www.mongodb.com/)
+
+## IV - Team
+
+- Maxime CHARPENTIER
+- Sophia GOUNANI
+- Alexandre DELALOY
+- Nancy CAMPBELL
+- Nino LAMOUREUX
+- Jason GOUROVITCH
+- Nicolas MARTIN
+
+## V - License
+
+Under [MIT](./LICENSE) license.
