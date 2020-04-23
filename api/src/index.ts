@@ -2,9 +2,9 @@ import express from "express";
 import assert from "assert";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-import chalk from "chalk"
-import dotenv from "dotenv"
-dotenv.config()
+import chalk from "chalk";
+import dotenv from "dotenv";
+dotenv.config();
 
 import apiRoutes from "./router";
 
@@ -23,6 +23,7 @@ mongoose
     useNewUrlParser: true,
   })
   .then((res) => {
+    // tslint:disable-next-line:no-console
     console.log(
       `${chalk.green("[index.js]")} DB (${chalk.blue(
         res.connections[0].name
@@ -30,6 +31,7 @@ mongoose
     );
   })
   .catch((err) => {
+    // tslint:disable-next-line:no-console
     console.log(err.message);
   });
 
@@ -50,6 +52,7 @@ const port = process.env.PORT || process.env.MONGO_PORT;
 
 // Launch app to listen to specified port
 app.listen(port, () => {
+  // tslint:disable-next-line:no-console
   console.log(
     `${chalk.green("[index.js]")} Running API on port ${chalk.blue(port)}`
   );
