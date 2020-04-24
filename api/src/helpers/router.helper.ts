@@ -22,4 +22,11 @@ router
   .put(recipeController.update)
   .delete(recipeController.delete);
 
+router.route("/check").get((req, res) => {
+  res.json({
+    status: "success",
+    message: "I'm alive",
+  });
+});
+
 export default router;
