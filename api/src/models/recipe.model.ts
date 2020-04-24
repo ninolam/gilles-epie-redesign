@@ -1,6 +1,5 @@
 import mongoose, { Schema } from "mongoose";
 import { IRecipe } from "../types";
-import { truncate } from "fs";
 
 const recipeSchema: Schema = new Schema({
   title: {
