@@ -3,6 +3,7 @@ import express from "express";
 import setSocialRoute from "../routes/social.route";
 import setRecipeRoute from "../routes/recipes.route";
 import setRestaurantRoute from "../routes/restaurants.route";
+import setArticleRoute from "../routes/articles.route";
 
 const router = express.Router();
 
@@ -16,6 +17,7 @@ router.get("/", (req, res) => {
 setSocialRoute(router);
 setRecipeRoute(router);
 setRestaurantRoute(router);
+setArticleRoute(router);
 
 router.route("/check").get((req, res) => {
   res.json({
