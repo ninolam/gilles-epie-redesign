@@ -1,5 +1,6 @@
 import express from "express";
 import recipeController from "../controllers/recipe.controller";
+import restaurantController from "../controllers/restaurant.controller";
 
 const router = express.Router();
 
@@ -21,6 +22,18 @@ router
   .patch(recipeController.update)
   .put(recipeController.update)
   .delete(recipeController.delete);
+
+router
+  .route("/restaurants")
+  .get(restaurantController.readAll)
+  .post(restaurantController.create);
+
+router
+  .route("/restaurants/:restaurant_id")
+  .get(restaurantController.read)
+  .patch(restaurantController.update)
+  .put(restaurantController.update)
+  .delete(restaurantController.delete);
 
 router.route("/check").get((req, res) => {
   res.json({

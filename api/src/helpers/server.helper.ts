@@ -7,9 +7,11 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import router from "./router.helper";
+import insertExistingData from "../utils/insertExistingData.util";
 import Recipe from "../models/recipe.model";
 import recipesData from "../../../data/recipes.json";
-import insertExistingData from "../utils/insertExistingData.util";
+import Restaurant from "../models/restaurant.model";
+import restaurantsData from "../../../data/restaurants.json";
 
 export default class Server {
   app: any;
@@ -53,6 +55,7 @@ export default class Server {
       });
 
     insertExistingData(recipesData, Recipe);
+    insertExistingData(restaurantsData, Restaurant);
   };
   start = () => {
     this.setupApp();
