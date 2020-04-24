@@ -1,6 +1,8 @@
 import express from "express";
-import recipeController from "../controllers/recipe.controller";
-import restaurantController from "../controllers/restaurant.controller";
+
+import setSocialRoute from "../routes/social.route";
+import setRecipeRoute from "../routes/recipes.route";
+import setRestaurantRoute from "../routes/restaurants.route";
 
 const router = express.Router();
 
@@ -11,29 +13,9 @@ router.get("/", (req, res) => {
   });
 });
 
-router
-  .route("/recipes")
-  .get(recipeController.readAll)
-  .post(recipeController.create);
-
-router
-  .route("/recipes/:recipe_id")
-  .get(recipeController.read)
-  .patch(recipeController.update)
-  .put(recipeController.update)
-  .delete(recipeController.delete);
-
-router
-  .route("/restaurants")
-  .get(restaurantController.readAll)
-  .post(restaurantController.create);
-
-router
-  .route("/restaurants/:restaurant_id")
-  .get(restaurantController.read)
-  .patch(restaurantController.update)
-  .put(restaurantController.update)
-  .delete(restaurantController.delete);
+setSocialRoute(router);
+setRecipeRoute(router);
+setRestaurantRoute(router);
 
 router.route("/check").get((req, res) => {
   res.json({
