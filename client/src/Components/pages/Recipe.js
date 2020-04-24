@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const Recipe = () => {
     return (
         <div>
-            <h1>Recipe</h1>
+            <h1>Recette</h1>
         </div>
     )
 }
