@@ -2,6 +2,7 @@ import { Document } from "mongoose"
 
 export interface IRecipe extends Document {
   title: string;
+  date: string
   picture_url: string;
   type: string;
   number_of_persons: number;
