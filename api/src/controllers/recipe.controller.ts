@@ -9,11 +9,7 @@ class RecipeController {
           message: err,
         });
       }
-      res.json({
-        status: "success",
-        message: "Recipes retrieved successfully",
-        data: recipes,
-      });
+      res.send(recipes);
     });
   };
   static create = (req, res) => {
@@ -51,11 +47,7 @@ class RecipeController {
           message: err,
         });
       }
-      res.json({
-        status: "success",
-        message: "Recipe details loading..",
-        data: recipe,
-      });
+      res.send(recipe);
     });
   };
   static update = (req, res) => {
