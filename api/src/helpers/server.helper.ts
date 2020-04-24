@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import chalk from "chalk";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
@@ -6,9 +7,11 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import router from "./router.helper";
+import insertExistingData from "../utils/insertExistingData.util";
 import Recipe from "../models/recipe.model";
 import recipesData from "../../../data/recipes.json";
-import insertExistingData from "../utils/insertExistingData.util";
+import Restaurant from "../models/restaurant.model";
+import restaurantsData from "../../../data/restaurants.json";
 
 export default class Server {
   app: any;
@@ -19,6 +22,7 @@ export default class Server {
   }
   setupApp = () => {
     const app = this.app;
+    app.use(cors());
     app.get("/", (req, res) => {
       res.send("Gilles Epié Redesign Server. add '/api' to access to the API");
     });
@@ -51,6 +55,7 @@ export default class Server {
       });
 
     insertExistingData(recipesData, Recipe);
+    insertExistingData(restaurantsData, Restaurant);
   };
   start = () => {
     this.setupApp();
