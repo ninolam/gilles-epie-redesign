@@ -34,4 +34,14 @@ const RecipeText = styled.p`
     padding-bottom: ${props => sizes[props.size].paddingBottom};
 `;
 
+const RecipeTitle = styled.h1`
+    font-family: 'Karla', sans-serif;
+    color: #000000;
+    font-size:  ${props => sizes[props.size].fontSize};
+    line-height: ${props => sizes[props.size].lineHeight};
+    font-weight: ${props => sizes[props.size].fontWeight};
+    text-transform: ${props => sizes[props.size].textTransfrom};
+    padding-bottom: ${props => sizes[props.size].paddingBottom};
+`;
+
 export {RecipeText}
