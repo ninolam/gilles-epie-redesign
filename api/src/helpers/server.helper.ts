@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import chalk from "chalk";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
@@ -19,6 +20,7 @@ export default class Server {
   }
   setupApp = () => {
     const app = this.app;
+    app.use(cors());
     app.get("/", (req, res) => {
       res.send("Gilles Epié Redesign Server. add '/api' to access to the API");
     });
