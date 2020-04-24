@@ -29,3 +29,10 @@ export interface IRestaurant extends Document {
   website: string;
   schedules: string;
 }
+
+
+export interface ISocial extends Document {
+  name: string;
+  label: string;
+  url: string;
+}
