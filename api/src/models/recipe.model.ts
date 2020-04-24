@@ -28,7 +28,3 @@ const recipeSchema: Schema = new Schema({
 });
 
 export default mongoose.model<IRecipe>("Recipe", recipeSchema);
-
-// module.exports.get = function (callback, limit) {
-//   Recipe.find(callback).limit(limit);
-// };
