@@ -1,15 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
-import '../styles/reset.scss';
-import '../styles/global.scss';
-
-import Header from './organisms/Header';
 import Footer from './organisms/Footer';
+import Header from './organisms/Header/Header'
 
 import Home from './pages/Home';
 import Recipes from './pages/Recipes';
 import Recipe from './pages/Recipe';
+
+
 
 const App = () => {
   return (

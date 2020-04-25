@@ -1,6 +1,6 @@
 import restaurantController from "../controllers/restaurant.controller";
 
-const setRestaurantRoute = (router) => {
+const setRestaurantsRoute = (router) => {
   router
     .route("/restaurants")
     .get(restaurantController.readAll)
@@ -14,4 +14,4 @@ const setRestaurantRoute = (router) => {
     .delete(restaurantController.delete);
 };
 
-export default setRestaurantRoute;
+export default setRestaurantsRoute;

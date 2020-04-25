@@ -1,6 +1,6 @@
 import articleController from "../controllers/article.controller";
 
-const setArticleRoute = (router) => {
+const setArticlesRoute = (router) => {
   router
     .route("/articles")
     .get(articleController.readAll)
@@ -14,4 +14,4 @@ const setArticleRoute = (router) => {
     .delete(articleController.delete);
 };
 
-export default setArticleRoute;
+export default setArticlesRoute;
