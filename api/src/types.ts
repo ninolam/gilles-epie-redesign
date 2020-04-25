@@ -38,11 +38,16 @@ export interface IArticle extends Document {
   author: string;
   date: string;
   content: string;
-  sources: string[]
+  sources: string[];
 }
 
 export interface ISocial extends Document {
   name: string;
   label: string;
   url: string;
+}
+
+export interface IInfo extends Document {
+  name: string;
+  bio: string;
 }
