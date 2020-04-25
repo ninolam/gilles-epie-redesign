@@ -1,3 +1,23 @@
 .Header {
-    
+    width: 100vw;
+    &__wrapper {
+        height: 144px;
+        max-width: 1140px;
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    &__brand {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        color: #000;
+        &:after {
+            content: '.';
+            color: #ff6f7b;
+        }
+    }
+    &__items {
+        display: flex;
+    }
 }
