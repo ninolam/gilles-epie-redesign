@@ -95,7 +95,7 @@ const Recipe = ({ location }) => {
                     </>
                 }
             </RecipeContent>
-                <Recipes exact path="/recipes" title="Plus de recettes ?" />
+            <Recipes path="/recipes" title="Plus de recettes ?" />
         </>
 
     )
