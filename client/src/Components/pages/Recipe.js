@@ -25,7 +25,6 @@ const MainImg = styled.img`
     margin-top: 80px;
 `;
 const TitlePresentation = styled.h2`
-    font-family: 'Karla', sans-serif;
     font-weight: bold;
     font-size: 24px;
     letter-spacing: -0.8px;
@@ -36,15 +35,13 @@ const TitlePresentation = styled.h2`
 `;
 
 const TextPresentation = styled.p`
-    font-family: 'Karla', sans-serif;
     font-size: 18px;
     line-height: 28px;
 `;
 
 const ListPresentation = styled.ul`
-    list-style-type: none;
-    font-family: 'Karla', sans-serif;
     font-size: 18px;
+    line-height: 28px;
     &:first-letter{
         text-transform: uppercase;
     }

@@ -35,22 +35,18 @@ const CardImageContainer = styled.div`
 `;
 
 const CardTitle = styled.h1`
-    font-family: 'Karla', sans-serif;
     color: #000000;
     font-size: 24px;
     line-height: 36px;
     font-weight: bold;
-    text-transform: none;
     padding-bottom: 10px;
     `;
 
 const CardDescription = styled.p`
-    font-family: 'Karla', sans-serif;
     color: #000000;
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
-    text-transform: none;
     margin-bottom: 20px;
     overflow: hidden;
     max-height: 100px;
@@ -58,7 +54,6 @@ const CardDescription = styled.p`
 
 
 const CardTitleDate = styled.h2`
-    font-family: 'Karla', sans-serif;
     color: #000000;
     font-size: 11px;
     line-height: 20px;
@@ -68,17 +63,38 @@ const CardTitleDate = styled.h2`
 `;
 
 const CardButton = styled.button`
-    font-family: 'Karla', sans-serif;
+    position: relative;
+    z-index: 1;
     color: #ff6f7b;
     font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 0;
+    padding: 10px 10px 10px 0;
     letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
     span{
         padding-left: 5px;
         font-size: 13px;
     }
+    :hover {
+        color: #FFFFFF;
+        padding-left: 10px;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff6f7b;
+        transition: 0.3s ease-in-out;
+    }
+    :hover:before {
+        width: 100%;
+    }
+    
 `;
 
 export { CardContainer, Card, CardTextContainer, CardImageContainer, CardButton, CardTitleDate, CardDescription, CardTitle };

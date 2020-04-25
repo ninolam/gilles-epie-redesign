@@ -17,7 +17,6 @@ const RecipesContent = styled.div`
 `;
 
 const MainTitle = styled.h1`
-    font-family: 'Karla', sans-serif;
     font-size: 48px;
     font-weight: bold;
     letter-spacing: -2px;
