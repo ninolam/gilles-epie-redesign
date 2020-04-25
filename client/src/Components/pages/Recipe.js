@@ -7,6 +7,7 @@ import MainImgSrc from '../../assets/details-img.png';
 const RecipeContent = styled.div`
     max-width: 720px;
     margin: 0 auto;
+    padding-bottom: 100px;
 `;
 
 const MainTitle = styled.h1`

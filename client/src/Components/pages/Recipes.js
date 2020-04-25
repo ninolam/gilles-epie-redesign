@@ -8,6 +8,7 @@ const RecipesContainer = styled.main`
     height: 100%;
     width: 100%;
     background: linear-gradient(#ffffff 50vh ,#f8f8f8 50vh);
+    padding-bottom: 100px;
 `;
 
 const RecipesContent = styled.div`

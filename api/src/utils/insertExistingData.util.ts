@@ -5,7 +5,10 @@ const insertExistingData = (data: any[], Model: any) => {
   const collectionName = Model.collection.collectionName;
 
   data.forEach(async (el, i) => {
-    const element = await Model.collection.countDocuments({ title: el.title });
+    const key = el.title ? "title" : "name";
+    const element = await Model.collection.countDocuments({
+      [key]: el[key],
+    });
     if (element > 0) {
       // tslint:disable-next-line:no-console
       console.log(

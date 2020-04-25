@@ -8,10 +8,14 @@ dotenv.config();
 
 import router from "./router.helper";
 import insertExistingData from "../utils/insertExistingData.util";
+import Social from "../models/social.model";
+import socialsData from "../../../data/socials.json";
 import Recipe from "../models/recipe.model";
 import recipesData from "../../../data/recipes.json";
 import Restaurant from "../models/restaurant.model";
 import restaurantsData from "../../../data/restaurants.json";
+import Article from "../models/article.model";
+import articlesData from "../../../data/articles.json";
 
 export default class Server {
   app: any;
@@ -54,8 +58,10 @@ export default class Server {
         console.log(err.message);
       });
 
+    insertExistingData(socialsData, Social);
     insertExistingData(recipesData, Recipe);
     insertExistingData(restaurantsData, Restaurant);
+    insertExistingData(articlesData, Article);
   };
   start = () => {
     this.setupApp();

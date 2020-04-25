@@ -29,3 +29,20 @@ export interface IRestaurant extends Document {
   website: string;
   schedules: string;
 }
+
+export interface IArticle extends Document {
+  title: string;
+  subtitle: string;
+  header_picture: string;
+  footer_pictures: string[];
+  author: string;
+  date: string;
+  content: string;
+  sources: string[]
+}
+
+export interface ISocial extends Document {
+  name: string;
+  label: string;
+  url: string;
+}
