@@ -1,6 +1,6 @@
 import socialController from "../controllers/social.controller";
 
-const setSocialRoute = (router) => {
+const setSocialsRoute = (router) => {
   router
     .route("/socials")
     .get(socialController.readAll)
@@ -14,4 +14,4 @@ const setSocialRoute = (router) => {
     .delete(socialController.delete);
 };
 
-export default setSocialRoute;
+export default setSocialsRoute;

@@ -1,6 +1,6 @@
 import recipeController from "../controllers/recipe.controller";
 
-const setRecipeRoute = (router) => {
+const setRecipesRoute = (router) => {
   router
     .route("/recipes")
     .get(recipeController.readAll)
@@ -14,4 +14,4 @@ const setRecipeRoute = (router) => {
     .delete(recipeController.delete);
 };
 
-export default setRecipeRoute;
+export default setRecipesRoute;

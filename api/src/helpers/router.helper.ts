@@ -1,9 +1,10 @@
 import express from "express";
 
-import setSocialRoute from "../routes/social.route";
-import setRecipeRoute from "../routes/recipes.route";
-import setRestaurantRoute from "../routes/restaurants.route";
-import setArticleRoute from "../routes/articles.route";
+import setSocialsRoute from "../routes/social.route";
+import setRecipesRoute from "../routes/recipes.route";
+import setRestauranstRoute from "../routes/restaurants.route";
+import setArticlesRoute from "../routes/articles.route";
+import setInfosRoute from "../routes/infos.route";
 
 const router = express.Router();
 
@@ -14,14 +15,14 @@ router.get("/", (req, res) => {
   });
 });
 
-setSocialRoute(router);
-setRecipeRoute(router);
-setRestaurantRoute(router);
-setArticleRoute(router);
+setSocialsRoute(router);
+setRecipesRoute(router);
+setRestauranstRoute(router);
+setArticlesRoute(router);
+setInfosRoute(router);
 
 router.route("/check").get((req, res) => {
   res.json({
-    status: "success",
     message: "I'm alive",
   });
 });
