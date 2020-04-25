@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import Recipes from './pages/Recipes';
 import Recipe from './pages/Recipe';
 
-import "./../styles/master.scss"
+
 
 const App = () => {
   return (
