@@ -23,12 +23,12 @@ const Card = styled.div`
 `;
 
 const CardTextContainer = styled.div`
-    width: 70%;
+    width: 80%;
     padding: 30px 70px;
 `;
 
 const CardImageContainer = styled.div`
-    width: 45%;
+    width: 35%;
     background-image: url(${img});
     background-size: contain;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@ const CardDescription = styled.p`
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
-    text-transfrom: none;
+    text-transform: none;
     margin-bottom: 20px;
     overflow: hidden;
     max-height: 100px;
@@ -63,7 +63,7 @@ const CardTitleDate = styled.h2`
     font-size: 11px;
     line-height: 20px;
     font-weight: bold;
-    text-transfrom: uppercase;
+    text-transform: uppercase;
     padding-bottom: 15px;
 `;
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import styled from 'styled-components';
 import Recipes from './Recipes'
+
 import MainImgSrc from '../../assets/details-img.png';
 
 const RecipeContent = styled.div`
@@ -57,16 +58,17 @@ const Recipe = ({ location }) => {
     const [recipe, setRecipe] = useState({})
 
     useEffect(() => {
-        const id = location.state.id;
-        console.log(id)
-        axios.get("http://localhost:27017/api/recipes/" + id)
+        axios.get("http://localhost:27017/api/recipes/" + location.state.id)
             .then(res => {
                 setRecipe(res.data)
+                window.scrollTo(0, 0);
             })
-    }, []);
+            document.title = recipe.title
+    }, [location.state.id, recipe.title]);
 
 
     return (
+        <>
             <RecipeContent>
                 <MainTitle>{recipe.title}</MainTitle>
                 <MainImg src={MainImgSrc} alt="" />
@@ -93,6 +95,8 @@ const Recipe = ({ location }) => {
                     </>
                 }
             </RecipeContent>
+                <Recipes exact path="/recipes" title="Plus de recettes ?" />
+        </>
 
     )
 }
