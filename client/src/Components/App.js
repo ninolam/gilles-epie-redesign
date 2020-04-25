@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
-import Header from './organisms/Header';
+import Header from './organisms/Header/Header';
 import Footer from './organisms/Footer';
 
 import Home from './pages/Home';
