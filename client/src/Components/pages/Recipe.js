@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import styled from 'styled-components';
 import Recipes from './Recipes'
-import { BrowserRouter as Router } from "react-router-dom";
 
 import MainImgSrc from '../../assets/details-img.png';
 
@@ -57,16 +56,15 @@ const ListPresentation = styled.ul`
 const Recipe = ({ location }) => {
 
     const [recipe, setRecipe] = useState({})
-    const [id, setId] = useState("")
 
     useEffect(() => {
-        setId(location.state.id)
-        axios.get("http://localhost:27017/api/recipes/" + id)
+        axios.get("http://localhost:27017/api/recipes/" + location.state.id)
             .then(res => {
-                console.log(res.data.title)
                 setRecipe(res.data)
+                window.scrollTo(0, 0);
             })
-    }, [id]);
+            document.title = recipe.title
+    }, [location.state.id, recipe.title]);
 
 
     return (

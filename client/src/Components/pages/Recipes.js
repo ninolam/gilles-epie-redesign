@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const RecipesContainer = styled.main`
     height: 100%;
     width: 100%;
-    background: linear-gradient(#ffffff 50vh ,#f8f8f8 50vh);
+    background: linear-gradient(#ffffff 30vh ,#f8f8f8 30vh);
     padding-bottom: 100px;
 `;
 

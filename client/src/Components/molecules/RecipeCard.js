@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { CardContainer, Card, CardTextContainer, CardImageContainer,CardTitleDate, CardTitle, CardDescription, CardButton } from './RecipeCardStyled'
 
