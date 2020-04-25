@@ -16,6 +16,8 @@ import Restaurant from "../models/restaurant.model";
 import restaurantsData from "../../../data/restaurants.json";
 import Article from "../models/article.model";
 import articlesData from "../../../data/articles.json";
+import Info from "../models/info.model";
+import infosData from "../../../data/infos.json";
 
 export default class Server {
   app: any;
@@ -62,6 +64,7 @@ export default class Server {
     insertExistingData(recipesData, Recipe);
     insertExistingData(restaurantsData, Restaurant);
     insertExistingData(articlesData, Article);
+    insertExistingData(infosData, Info);
   };
   start = () => {
     this.setupApp();
