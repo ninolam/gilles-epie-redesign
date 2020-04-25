@@ -1,0 +1,21 @@
+[
+  {
+    "header_pictures": ["https://foo.bar", "https://foo.bar"],
+    "footer_pictures": [
+      "https://foo.bar",
+      "https://foo.bar",
+      "https://foo.bar"
+    ],
+    "title": "Citrus Étoile",
+    "subtitle": "Chef Étoile Champs-Élysées Restaurant Paris",
+    "description": "Le Citrus Etoile est un restaurant gastronomique français situé à Paris à deux pas des Champs-Elysées. Vous pourrez y déguster une cuisine légère de qualité.\n\nSitué à quelques pas des Champs Élysées et de l’Arc de Triomphe, le Citrus Etoile vous accueille 6 rue Arsène Houssaye. En poussant la porte de l’établissement, découvrez un lieu chaleureux, lumineux, et coloré dans les tons orangés.\n\nAu travers d’une cuisine française subtile et raffinée évoquant parfois des saveurs d’Asie ou de Californie, Gilles Epié vous invite à découvrir la haute gastronomie française, alliant tradition, savoir – faire et raffinement.\n\nLa cuisine du Chef Gilles Epié, dans sa simplicité, a su séduire les plus exigeants.",
+    "name": "Restaurant CITRUS ETOILE",
+    "adress": "6 rue Arsène Houssaye",
+    "zipcode": 75008,
+    "city": "Paris",
+    "country": "France",
+    "phone": 142891551,
+    "website": "www.citrusetoile.paris",
+    "schedules": "Ouvert du Lundi ou Vendredi, de 12h00 à 14H30 et de 19H30 à 22H30."
+  }
+]

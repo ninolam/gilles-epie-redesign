@@ -4,46 +4,41 @@ import axios from 'axios'
 
 import styled from 'styled-components';
 
-const RecipeContainer = styled.main`
+const RecipesContainer = styled.main`
     height: 100%;
     width: 100%;
     background: linear-gradient(#ffffff 50vh ,#f8f8f8 50vh);
 `;
 
-const RecipeContent = styled.div`
+const RecipesContent = styled.div`
     max-width: 1145px;
     margin: 0 auto;
 `;
 
+const MainTitle = styled.h1`
+    font-family: 'Karla', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -2px;
+`;
 
-const Recipes = () => {
-
+const Recipes = ({title, path}) => {
     const [recipes, setRecipes] = useState([])
 
     useEffect(() => {
         axios.get(`http://localhost:27017/api/recipes/`)
             .then(res => {
-                console.log(res.data)
-                const allRecipes = res.data;
-                setRecipes(recipes.push(allRecipes))
-                console.log(recipes)
+                setRecipes(res.data)
             })
-    }, [recipes]);
+    }, []);
 
     return (
-        <RecipeContainer>
-            <RecipeContent>
-                <h1>Recettes</h1>
-                <RecipeCard />
-                <RecipeCard />
-                <RecipeCard />
-                <RecipeCard />
-                <RecipeCard />
-                <RecipeCard />
-                <RecipeCard />
-                <RecipeCard />
-            </RecipeContent>
-        </RecipeContainer>
+        <RecipesContainer>
+            <RecipesContent>
+                <MainTitle>{title}</MainTitle>
+                {recipes.map(recipe => <RecipeCard key={recipe._id} recipe={recipe} path={path} />)}
+            </RecipesContent>
+        </RecipesContainer>
     )
 }
 

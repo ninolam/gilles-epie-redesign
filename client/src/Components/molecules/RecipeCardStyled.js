@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../assets/recipe-img.png';
+import img from '../../assets/recipe-card-img.png';
 
 const CardContainer = styled.article`
     width: 100%;
@@ -12,7 +12,7 @@ const CardContainer = styled.article`
         margin-top:-150px;
     }
     &:nth-of-type(1) {
-        margin-top: 100px;   
+        margin-top: 120px;   
     }
 `;
 const Card = styled.div`
@@ -23,15 +23,48 @@ const Card = styled.div`
 `;
 
 const CardTextContainer = styled.div`
-    width: 65%;
-    padding: 30px 50px;
+    width: 70%;
+    padding: 30px 70px;
 `;
 
 const CardImageContainer = styled.div`
-    width: 35%;
+    width: 45%;
     background-image: url(${img});
     background-size: contain;
     background-repeat: no-repeat;
+`;
+
+const CardTitle = styled.h1`
+    font-family: 'Karla', sans-serif;
+    color: #000000;
+    font-size: 24px;
+    line-height: 36px;
+    font-height: bold;
+    text-transfrom: none;
+    padding-bottom: 10px;
+    `;
+
+const CardDescription = styled.p`
+    font-family: 'Karla', sans-serif;
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transfrom: none;
+    margin-bottom: 20px;
+    overflow: hidden;
+    max-height: 100px;
+`;
+
+
+const CardTitleDate = styled.h2`
+    font-family: 'Karla', sans-serif;
+    color: #000000;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transfrom: uppercase;
+    padding-bottom: 15px;
 `;
 
 const CardButton = styled.button`
@@ -48,4 +81,4 @@ const CardButton = styled.button`
     }
 `;
 
-export {CardContainer, Card, CardTextContainer, CardImageContainer, CardButton} ;
+export { CardContainer, Card, CardTextContainer, CardImageContainer, CardButton, CardTitleDate, CardDescription, CardTitle };
