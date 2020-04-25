@@ -53,18 +53,18 @@ const ListPresentation = styled.ul`
     }
 `;
 
-const Recipe = ({ location }) => {
+const Recipe = ({ computedMatch }) => {
 
     const [recipe, setRecipe] = useState({})
 
     useEffect(() => {
-        axios.get("http://localhost:27017/api/recipes/" + location.state.id)
+        axios.get("http://localhost:27017/api/recipes/" + computedMatch.params.id)
             .then(res => {
                 setRecipe(res.data)
                 window.scrollTo(0, 0);
             })
             document.title = recipe.title
-    }, [location.state.id, recipe.title]);
+    }, [computedMatch.params.id, recipe.title]);
 
 
     return (
