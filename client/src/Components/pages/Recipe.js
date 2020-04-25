@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import styled from 'styled-components';
 import Recipes from './Recipes'
+import { BrowserRouter as Router } from "react-router-dom";
+
 import MainImgSrc from '../../assets/details-img.png';
 
 const RecipeContent = styled.div`
@@ -55,18 +57,20 @@ const ListPresentation = styled.ul`
 const Recipe = ({ location }) => {
 
     const [recipe, setRecipe] = useState({})
+    const [id, setId] = useState("")
 
     useEffect(() => {
-        const id = location.state.id;
-        console.log(id)
+        setId(location.state.id)
         axios.get("http://localhost:27017/api/recipes/" + id)
             .then(res => {
+                console.log(res.data.title)
                 setRecipe(res.data)
             })
-    }, []);
+    }, [id]);
 
 
     return (
+        <>
             <RecipeContent>
                 <MainTitle>{recipe.title}</MainTitle>
                 <MainImg src={MainImgSrc} alt="" />
@@ -93,6 +97,8 @@ const Recipe = ({ location }) => {
                     </>
                 }
             </RecipeContent>
+                <Recipes exact path="/recipes" title="Plus de recettes ?" />
+        </>
 
     )
 }

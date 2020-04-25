@@ -18,7 +18,7 @@ const App = () => {
         <Header />
         <Switch>
           <Home exact path="/" />
-          <Recipes exact path="/recipes" title="Recettes"/>
+          <Recipes scrict exact path="/recipes" title="Recettes"/>
           <Recipe path="/recipes/:id" />
         </Switch>
         <Footer />

@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 
 import { CardContainer, Card, CardTextContainer, CardImageContainer,CardTitleDate, CardTitle, CardDescription, CardButton } from './RecipeCardStyled'
 
 const RecipeCard = ({ recipe, path }) => {
+
     return (
         <CardContainer>
             <Card>
@@ -18,7 +19,7 @@ const RecipeCard = ({ recipe, path }) => {
                         {recipe.preparation}
                     </CardDescription>
                     <Link to={{
-                        pathname: `recipes/${recipe._id}`,
+                        pathname: `${path}/${recipe._id}`,
                         state: { id: recipe._id }
                     }}>
                         <CardButton>
