@@ -95,7 +95,7 @@ const Recipe = ({ computedMatch }) => {
                     </>
                 }
             </RecipeContent>
-            <Recipes path="/recipes" title="Plus de recettes ?" />
+            <Recipes currentRecipe={recipe._id} path="/recipes" title="Plus de recettes ?" />
         </>
 
     )

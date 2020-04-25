@@ -39,8 +39,8 @@ const CardTitle = styled.h1`
     color: #000000;
     font-size: 24px;
     line-height: 36px;
-    font-height: bold;
-    text-transfrom: none;
+    font-weight: bold;
+    text-transform: none;
     padding-bottom: 10px;
     `;
 

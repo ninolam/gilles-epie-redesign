@@ -23,15 +23,15 @@ const MainTitle = styled.h1`
     letter-spacing: -2px;
 `;
 
-const Recipes = ({title, path}) => {
+const Recipes = ({ title, path, currentRecipe, computedMatch }) => {
     const [recipes, setRecipes] = useState([])
 
-    useEffect(() => {
+    useEffect(() => {  
         axios.get(`http://localhost:27017/api/recipes/`)
             .then(res => {
-                setRecipes(res.data)
-            })
-    }, []);
+                currentRecipe ? setRecipes(res.data.filter(recipe => recipe._id !== currentRecipe)) : setRecipes(res.data)
+            }) 
+    }, [currentRecipe]);
 
     return (
         <RecipesContainer>
