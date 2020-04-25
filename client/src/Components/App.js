@@ -18,8 +18,8 @@ const App = () => {
         <Header />
         <Switch>
           <Home exact path="/" />
-          <Recipes path="/recipes" />
-          <Recipe path="/recipe/:id" />
+          <Recipes exact path="/recipes" title="Recettes"/>
+          <Recipe path="/recipes/:id" />
         </Switch>
         <Footer />
       </Router>
