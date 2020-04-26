@@ -17,7 +17,7 @@ const Heading = () => {
           <div className="Heading__step"></div>
           <div className="Heading__step"></div>
         </div>
-        <span className="Heading__scroll">Scroll</span>
+        <span className="Heading__scroll">Scroll </span>
       </div>
       <button className="Heading__button">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">

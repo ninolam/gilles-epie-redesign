@@ -1,0 +1,81 @@
+.Restaurants {
+  padding: 100px 20px 150px 20px;
+  &__wrapper {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0px auto;
+  }
+  &__restaurant {
+    display: flex;
+    justify-content: space-between;
+    &:first-child {
+      margin-bottom: 150px;
+      .Restaurants__location {
+        margin-left: 98px;
+      }
+      .Restaurants__image {
+        background-image: url('./../../../../src/assets/img/juvia-restaurant.jpg')
+      }
+    }
+    &:last-child {
+      .Restaurants__location {
+        margin-right: 98px;
+        align-self: flex-end;
+      }
+      .Restaurants__image {
+        background-image: url('./../../../../src/assets/img/citrus-etoile-restaurant.jpeg')
+      }
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__location {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    color: $black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 88px;
+    &:before {
+      content: '';
+      height: 2px;
+      width: 10px;
+      background: $black;
+      margin-right: 4px;
+    }
+  }
+  &__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 555px;
+    height: 421px;
+  }
+  &__title {
+    margin-bottom: 55px;
+  }
+  &__text {
+    max-width: 361px;
+    margin-bottom: 80px;
+  }
+  &__link {
+    height: 49px;
+    padding: 0px 32px 0px 40px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $black;
+    background: $brand;
+    width: max-content;
+    font-weight: bold;
+    svg {
+      margin-left: 32px;
+      width: 14px;
+      height: 14px;
+      fill: $black;
+    }
+  }
+}
