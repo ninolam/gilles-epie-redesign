@@ -6,7 +6,7 @@ const ListCard = ({ item, path }) => {
         <div className="card">
             <div className="card__wrapper">
                 <div className="card__text-container">
-                    <h2>14 juin 2020</h2>
+                    <h2>{item.date}</h2>
                     <h1>{item.title}</h1>
                     <p>{item.preparation ? item.preparation : item.content}</p>
                     <Link to={{
