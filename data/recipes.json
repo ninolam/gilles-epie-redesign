@@ -1,62 +1,103 @@
 [
   {
     "ingredients": [
+      "300g de joue de bœuf coupée en morceaux",
+      "1 litre de vin rouge",
+      "500 ml d’eau",
+      "1 cube de bouillon de volaille nature",
+      "3 gousses d’ail",
+      "4 cuillères à soupe d’huile d’olive",
+      "50g de farine",
+      "Gros sel & poivre",
+      "1 Foie gras de canard de 600g cuit",
+      "2 paquets  de raviolis chinois (pour leur légèreté et une cuisson rapide)",
+      "1 blanc d’œuf",
+      "50g de farine"
+    ],
+    "title": "Ravioli de fois gras de canard au jus de daube",
+    "picture_url": "http://www.gillesepie.com/wp-content/uploads/2016/06/foie-gras-1.jpeg",
+    "type": "Plat",
+    "date": "Juin 14, 2016",
+    "number_of_persons": 6,
+    "preparation": "Commençons par la daube de bœuf : dans une cocotte faire chauffer l’huile d’olive. Une fois l’huile bien chaude, déposer les morceaux de viande et les laisser rôtir. Ajouter la farine et mélanger avec une spatule.\n\nLaisser cuire deux minutes puis ajouter le vin rouge, l’eau et le cube de volaille.\n\nFaire bouillir, saler, poivrer. Couvrir et laisser cuire à feu doux pendant environ deux heures.\n\nLes raviolis : couper le fois gras en tranche puis recouper chaque tranche en 4 morceaux. Réserver au frais. Dans un bol, avec une fourchette, mélanger le blanc d’oeuf avec une petite goutte d’eau.\n\nSaupoudrer le plan de travail de farine, étaler les fonds de pâtes à ravioli. Avec un pinceau, humidifier les bords des pâtes avec le blanc d’œuf.\n\nDéposer un carré de foie gras sur chaque ravioli, poivrer. Refermer avec un autre carré de pâte en appuyant bien du bout des doigts sur les bords de chaque ravioli pour les coller.\n\nRéserver au frais.\n\nLorsque la viande est cuite, égoutter les morceaux dans un plat et enlever l’ail cuit. Emietter ensuite quelques petit morceaux de viande dans la sauce et faite recuire doucement le jus de bœuf jusqu’à l’obtention d’une sauce légèrement liée (attention, si la sauce est trop réduite, elle peut devenir amère et collante en bouche).\n\nRectifier l’assaisonnement selon votre goût.",
+    "cooking": "Dans une grande casserole, faire bouillir de l’eau salée puis déposer les raviolis un à un. Au bout d’une minute (aussitôt que le ravioli remonte à la surface), les égoutter et les déposer délicatement dans une assiette. Dresser les raviolis sur chaque assiette puis napper du jus de daube de bœuf.\n\nDéguster la recette gastronomique de ravioli de foie gras aussitôt car le foie gras refroidit vite !\n\nA NOTER : on ne jette rien en cuisine ! Gardez la viande de bœuf, vous pourrez en faire un excellent hachis Parmentier servi avec une salade bien vinaigrée."
+  },
+  {
+    "ingredients": [
       "Une bouteille de vin rouge capiteux",
-      "Un bâton de cannelle",
+      "Une branche de cannelle",
       "150g de sucre",
-      "8 graines de coriandre écrasée",
+      "8 grains de coriandre écrasés",
       "4 grains de poivre noir écrasés",
       "Un clou de girofle",
-      "Un zeste d'orange",
-      "Une orange",
-      "¼ jus de citron",
-      "Un bouquet de menthe",
-      "Un assortiment de fruits rouges, selon ce que vous aimez\n\n"
+      "1 zest d’orange",
+      "1 orange pressée",
+      "¼ de jus de citron",
+      "1 bouquet de menthe",
+      "Un assortiment de fruits rouges, en fonction de ce que vous aimez"
     ],
-    "title": "Soupe de fruits rouges au vin rouge",
-    "picture_url": "https://foo.bar",
+    "title": "Soupe de fruits rouge au vin rouge",
+    "picture_url": "http://www.gillesepie.com/wp-content/uploads/2016/06/unnamed-1.jpg",
     "type": "Dessert",
+    "date": "Juin 13, 2016",
     "number_of_persons": 4,
-    "preparation": "Dans une casserole, chauffer le vin avec des épices et du sucre.\nFaire bouillir, brûler et laisser réduire d'un tiers. Lorsque vous retirez la chaleur du vin, ajoutez le brin de menthe et laissez infuser jusqu'à refroidissement complet. Gardez ensuite au réfrigérateur.\nUne fois refroidi, passez le sirop dans un ustensile chinois.\nRépartir les baies dans des assiettes et verser une louche de sirop sur les fruits. Ajouter la menthe coupée en julienne.\nMaintenant, vous pouvez profiter de la recette du chef, une soupe de fruits rouges."
+    "preparation": "Dans une casserole, faire chauffer le vin avec les épices et le sucre.\nFaire bouillir, flamber et laisser réduire d’un tiers.\nLorsque vous retirez le vin du feu, ajoutez le bouquet de menthe et laissez le infuser jusqu’à refroidissement complet. Réservez ensuite au frigo.\nUne fois frais, passez le sirop au chinois.",
+    "dressing": "Répartissez les fruits rouges dans les assiettes et versez une louche de sirop sur les fruits. Ajoutez la menthe coupée en julienne."
   },
   {
     "ingredients": [
-      "160g de ragoût de boeuf par personne (entier)",
-      "1,5 litre de vin",
-      "capiteux Olives Taggiache",
-      "3 bottes de basilic",
-      "1 kg de pomme de terre",
-      "Beurre, lait",
-      "Huile d'olive",
-      "4 grosses carottes",
-      "1 cube de bouillon de boeuf",
-      "Moutarde",
-      "Ail, romarin",
-      "Veau en poudre"
-    ],
-    "title": "Ragoût de boeuf à la provençale",
-    "picture_url": "https://foo.bar",
-    "type": "Plat",
-    "number_of_persons": 4,
-    "preparation": "La viande\nRôtir la viande dans une poêle avec de l'huile d'olive\nAjouter l'ail et déglacer avec le vin rouge\nMouiller avec le vin, ajouter le fond de veau, l'eau et le bouquet garnir\nCouvrir et cuire à feu doux pendant 2h30\n\nPurée de carottes et basilic\nPlonger un basilic dans une casserole bouillante d'eau salée, une minute\nRéserver le basilic quelques minutes dans une eau glacée\nRouler à l'huile d'olive dans un mixeur ..\nCuire les pommes de terre pelées à l'eau bouillante\nCuire les carottes pelées à l'eau bouillante avec un cube de bouillon.\nFiltrez les jus de viande et réduisez.\nPasser les pommes de terre dans un moulin, ajouter le beurre et le lait.\nMélanger la purée de pâte de basilic jusqu'à ce qu'elle devienne complètement verte. Faire revenir le boeuf dans une poêle et saupoudrer de jus.\nPasser les carottes au micro-ondes et garnir de moutarde et de persil.",
-    "dressing": "Mettez le morceau de boeuf au centre de l'assiette, nappez de sauce, ajoutez la purée de basilic et les carottes sur le côté. Et déposez les olives sur le boeuf, le poivre concassé et les légumes verts pour la décoration ..\n\nVous pouvez manger la meilleure recette de ragoût de boeuf provençal à l'olive."
-  },
-  {
-    "ingredients": [
-      "1kg de petits pois frais",
-      "Une boîte de truffes hachées",
-      "50g par personne de pâté de crabe",
-      "25cl de crème fouettée",
-      "Cerfeuil ou persil",
-      "Huile d'olive",
-      "Sel, poivre et piment d'Espelette"
+      "12 noix de Saint-Jacques",
+      "2 oignions",
+      "2 kg d’épinards crus",
+      "150g de beurre",
+      "Lait de coco en boite",
+      "Wasabi",
+      "Piment d’Espelette",
+      "Cerfeuil"
     ],
     "ustensils": ["Blender"],
-    "title": "Petits pois truffés au crabe",
-    "picture_url": "https://foo.bar",
+    "title": "Coquilles Saint-Jacques aux oignons, épinards wasabi et lait coco",
+    "picture_url": "http://www.gillesepie.com/wp-content/uploads/2016/06/coquille-gille-1.jpg",
     "type": "Entrée",
+    "date": "Juin 13, 2016",
     "number_of_persons": 4,
-    "preparation": "blanchir les petits pois, les diviser en deux et conserver une moitié pour plus tard.\nFaire cuire l'autre moitié de pois dans de l'eau bouillante salée pendant 4 minutes.\nÉgoutter et mélanger dans un mélangeur.\nAjouter les pois lentement jusqu'à ce qu'ils soient veloutés.\n\nPréparez la crème fouettée.",
-    "dressing": "Mettre dans l'assiette et ajouter les pois restants, déposer délicatement la chair de crabe et les truffes avec une cuillerée de crème fouettée, décorer de cerfeuil.\nArroser enfin d'un peu d'huile, de poivre et de piment d'Espelette.\n\nVous pouvez manger la recette française de petits pois à la truffe au crabe"
+    "preparation": "Fondre le beurre et le clarifier\nÉmincer les oignons, mettre dans une casserole et ajouter le beurre clarifié\nLaisser compoté la fondue d’oignons.\n\nUne fois les oignions cuits, les égoutter les mettre dans un blender pour avoir une\npurée, récupérer le beurre d’oignons.\n\nÉplucher et laver les épinards,\nLes ébouillanter dans une casserole d’eau bouillante et les plonger dans l’eau glacée\nPresser et réserver dans un bol.\n\nCouper les Saint Jacques en deux, beurrer un moule à tarte\nTapisser le fond du moule de Saint-Jacques, côté coupé vers le haut\nCuire au four\n\nTiédir le lait de coco avec un peu d’eau\n\nDans une casserole, mélanger les épinards concassés et l’oignon avec du beurre  d’oignions, saler poivrer.\nAjouter au coquilles avec les saint jacques et passer 30 secondes au four\n\nÉmulsionner le lait de coco pour en faire une mousse",
+    "dressing": "Dans les assiettes, mettre un fond de wasabi, et démouler les coquilles saint jacques au dessus. Ajouter le lait de coco autour de l’assiette. Ajouter le piment  d’Espelette et le cerfeuil pour le décor."
+  },
+  {
+    "ingredients": [
+      "16 Asperges vertes de taille moyenne",
+      "2 jaunes d’œuf",
+      "1 citron vert",
+      "Sauce Soja (allégée en sel de préférence)",
+      "100g Beurre fondu clarifié (130g de beurre brut)",
+      "1 boîte d’œuf de saumon frais",
+      "Cerfeuil trempé dans l’eau glacée"
+    ],
+    "title": "Asperges vertes au velouté de jaune d'oeuf, citron vert, soja et caviar de saumon",
+    "picture_url": "http://www.gillesepie.com/wp-content/uploads/2015/07/asperges.jpg",
+    "type": "Entrée",
+    "date": "Juin 11, 2016",
+    "number_of_persons": 4,
+    "preparation": "Éplucher les asperges, cuire dans l’eau bouillante 3 minutes\nRéserver les asperges dans l’eau glacée et éponger sur un torchon\n\nClarifier le beurre, c’est à dire faire fondre le beurre et en retirer le petit lait\n\nDans un cul de poule au bain mari, fouetter deux jaunes, le jus d’un citron vert, une cas de soja, de l’eau.\n\nAjouter le beurre clarifié au fur et à mesure, ajouter le poivre, éventuellement le sel, la sauce soja est déjà salée\n\nCouper les asperges en deux dans la largeur, et les tiédir au micro onde",
+    "dressing": "Mettre la sauce velouté dans le fond de chaque assiette, disposer les asperges en quinconce. Ajouter une cuillère d’œuf de saumon sur les asperges, un filet de sauce soja et le cerfeuil."
+  },
+  {
+    "ingredients": [
+      "1kg Petits pois frais de coque",
+      "Une boîte de brisure de truffes hachées",
+      "50g par personne de chair de crabe",
+      "25cl de crème à chantilly",
+      "Cerfeuil",
+      "Huile de truffes",
+      "Sel, poivre et piment d'Espelette"
+    ],
+    "ustensils": ["Blender", "Chinois"],
+    "title": "Petits pois aux truffes, crabe et chantilly",
+    "picture_url": "http://www.gillesepie.com/wp-content/uploads/2016/06/recette-cuisine-facile-sans-four-de-veloute-de-petits-pois-french-recipe-of-truffled-cream-peas-with-crab2-800x450.jpg",
+    "type": "Plat",
+    "number_of_persons": 4,
+    "preparation": "Commencer par blanchir 8 petits pois, les couper en deux et réserver.\nCuire le reste des petits pois à l’eau bouillante salée (4 minutes)\nEgoutter et mixer dans un blender.\nAjouter le jus de blanchiment des petits pois au fur et à mesure pour obtenir un velouté.\nPasser dans un chinois et laisser refroidir.\n\nMonter la chantilly",
+    "dressing": "Dans une assiette creuse déposer le velouté, ajouter les petits pois coupés en deux puis délicatement mettre la chair de crabe les truffes et la quenelle de crème fouettée décorée avec du cerfeuil. Enfin ajouter un filet d’huile de truffes noires, du poivre et du piment d’espelette."
   }
 ]

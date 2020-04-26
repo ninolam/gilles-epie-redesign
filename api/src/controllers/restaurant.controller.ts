@@ -20,12 +20,14 @@ class RestaurantController {
     restaurant.header_pictures = req.body.header_pictures;
     restaurant.footer_pictures = req.body.footer_pictures;
     restaurant.description = req.body.description;
+    restaurant.resume = req.body.resume;
     restaurant.name = req.body.name;
     restaurant.adress = req.body.adress;
     restaurant.zipcode = req.body.zipcode;
     restaurant.city = req.body.city;
     restaurant.country = req.body.country;
     restaurant.phone = req.body.phone;
+    restaurant.fax = req.body.fax;
     restaurant.website = req.body.website;
     restaurant.schedules = req.body.schedules;
 
@@ -68,12 +70,14 @@ class RestaurantController {
       restaurant.header_pictures = req.body.header_pictures;
       restaurant.footer_pictures = req.body.footer_pictures;
       restaurant.description = req.body.description;
+      restaurant.resume = req.body.resume;
       restaurant.name = req.body.name;
       restaurant.adress = req.body.adress;
       restaurant.zipcode = req.body.zipcode;
       restaurant.city = req.body.city;
       restaurant.country = req.body.country;
       restaurant.phone = req.body.phone;
+      restaurant.fax = req.body.fax;
       restaurant.website = req.body.website;
       restaurant.schedules = req.body.schedules;
 

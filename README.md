@@ -2,6 +2,8 @@
 
 - [Gille Epié Portfolio](#gille-epi%c3%a9-portfolio)
   - [I - Install](#i---install)
+    - [Requirements](#requirements)
+    - [Project installation and configuration](#project-installation-and-configuration)
   - [II - Workflow Rules](#ii---workflow-rules)
     - [Branches](#branches)
     - [Commits](#commits)
@@ -15,9 +17,18 @@
   - [IV - Team](#iv---team)
   - [V - License](#v---license)
 
-> As part of a group project at hetic, we are responsible for redesigning and developing a portfolio. Our choice turned to [Gille Epié](http://www.gillesepie.com/).
+> As part of a group project at [HETIC](https://hetic.net), we are responsible for redesigning and developing a portfolio. Our choice turned to [Gille Epié](http://www.gillesepie.com/).
 
 ## I - Install
+
+### Requirements
+
+I assume you already have these elements **installed** and **configured**:
+
+- Nodejs
+- MongoDB
+
+### Project installation and configuration
 
 ```bash
 git clone https://github.com/blyndusk/gilles-epie-redesign.git
@@ -85,9 +96,10 @@ Shell 1:
 ```bash
 cd api
 cp .env.sample .env
-npm i 
+npm i
 npm start
 ```
+
 Shell 2:
 
 ```
@@ -105,6 +117,7 @@ The application will run on port `27017`.
 - Nino LAMOUREUX
 - Jason GOUROVITCH
 - Nicolas MARTIN
+- José GUIGNERY TEIXEIRA
 
 ## V - License
 
