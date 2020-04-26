@@ -102,19 +102,33 @@ Texts
 ***/
 
 .button-circular {
-    width: 64px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $brand;
-    border-radius: 50%;
-    svg {
-      fill: $black;
-      width: 13px;
-      height: 13px;
-    }
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $brand;
+  border-radius: 50%;
+  svg {
+    fill: $black;
+    width: 13px;
+    height: 13px;
   }
+}
+
+.button-square {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $brand;
+  svg {
+    fill: $black;
+    width: 13px;
+    height: 13px;
+  }
+}
 
 .button-link {
   height: 48px;
