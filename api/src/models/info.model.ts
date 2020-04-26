@@ -10,6 +10,10 @@ const infoSchema: Schema = new Schema({
     type: String,
     required: true,
   },
+  portraits_urls: {
+    type: [String],
+    required: true,
+  },
 });
 
 export default mongoose.model<IInfo>("Info", infoSchema);
