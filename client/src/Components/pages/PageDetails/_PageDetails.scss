@@ -1,0 +1,43 @@
+
+.page-details {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 144px;
+    padding-bottom: 100px;
+    h1 {
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: -0.8px;
+        margin: 80px 0 15px;
+        span {
+            color: #a0a4b8;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+    }
+    ul {
+        font-size: 18px;
+        line-height: 28px;
+        &:first-letter{
+            text-transform: uppercase;
+        }
+        li {
+            margin-top: 10px;
+        }
+    }
+}

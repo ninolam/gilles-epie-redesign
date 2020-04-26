@@ -1,17 +1,24 @@
 .Header {
   width: 100vw;
+  position: fixed;
+  top: 0;
+  padding: 0px 20px;
+  z-index: 10;
   &__wrapper {
     height: 144px;
-    max-width: 1140px;
-    width: 100%;
-    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__container {
     display: flex;
     align-items: center;
   }
   &__brand {
     font-family: "Playfair Display", serif;
     font-size: 20px;
-    color: #000;
+    color: $black;
+    margin-right: 112px;
     &:after {
       content: ".";
       color: $brand;
@@ -19,5 +26,37 @@
   }
   &__items {
     display: flex;
-  }
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-right: 53px;
+		}
+	}
+	&__link {
+		font-size: 15px;
+		line-height: 1.87;
+		color: $MediumGrey;
+	}
+	&__burger {
+		width: 48px;
+		height: 48px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+    justify-content: center;
+    background: $white;
+		&:before {
+			content: '';
+			background: $black;
+			width: 22px;
+			height: 2px;
+			margin-bottom: 5px;
+		}
+		&:after {
+			width: 22px;
+			content: '';
+			background: $black;
+			height: 2px;
+		}
+	}
 }

@@ -1,29 +1,33 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
-import Footer from './organisms/Footer';
-import Header from './organisms/Header/Header'
+import Footer from "./organisms/Footer";
+import Header from "./organisms/Header/Header";
 
-import Home from './pages/Home';
-import Recipes from './pages/Recipes';
-import Recipe from './pages/Recipe';
+import Home from "./pages/Home";
+import PageList from "./pages/PageList/PageList";
+import PageDetails from "./pages/PageDetails/PageDetails";
 
-
+import konami from "../utils/konami.util";
 
 const App = () => {
+  useEffect(() => {
+    konami(() => alert("KONAMICODE"));
+  });
   return (
     <div className="App">
       <Router>
         <Header />
         <Switch>
           <Home exact path="/" />
-          <Recipes scrict exact path="/recipes" title="Recettes"/>
-          <Recipe path="/recipes/:id" />
+          <PageList exact path="/recipes" title="Recettes" />
+          <PageList exact path="/articles" title="Press" />
+          <PageDetails path="/:path/:id" />
         </Switch>
         <Footer />
       </Router>
     </div>
   );
-}
+};
 
 export default App;

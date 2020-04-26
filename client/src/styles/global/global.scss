@@ -6,8 +6,18 @@ Global
 *:before,
 *:after { box-sizing: border-box; }
 body {
-    font-family: 'Karla', sans-serif;
-    margin: 0px;
+  font-family: 'Karla', sans-serif;
+  margin: 0px;
+}
+
+/***
+Content Wrapper (to have the same grid on the entire site)
+***/
+
+.content-wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0px auto;
 }
 
 
@@ -15,42 +25,51 @@ body {
 Titles
 ***/
 
-title-h1 {
-    font-weight: bold;
-    font-size: 84px;
-    line-height: 84px;
-    letter-spacing: -2.2px;
+.title-h1 {
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 84px;
+  letter-spacing: -2.2px;
+  color: $black;
 }
-title-h2 {
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: -2.0px;
-}
-title-h2-span {
+.title-h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -2.0px;
+  color: $black;
+  span {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-style: italic;
     font-size: 48px;
     line-height: 60px;
+    color: $brand;
+    letter-spacing: 0.5px;
+  }
 }
-title-h3 {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 52px;
-    letter-spacing: -1.6px;
+.title-h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: -1.6px;
+  span {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: $brand;
+  }
 }
-title-h4 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.8px;
+.title-h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.8px;
 }
-title-h5 {
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 20px;
-    letter-spacing: 1px;
+.title-h5 {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 1px;
 }
 
 
@@ -59,15 +78,62 @@ Texts
 ***/
 
 .text-large {
-    font-size: 18px;
-    line-height: 28px;
+  font-size: 18px;
+  line-height: 28px;
 }
 .text-medium {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
 }
 .text-small {
-    font-size: 13px;
-    line-height: 18px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+// content
+.mt-content {
+  margin-top: 144px;
+}
+
+
+/***
+Texts
+***/
+
+.button-circular {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $brand;
+    border-radius: 50%;
+    svg {
+      fill: $black;
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+.button-link {
+  height: 48px;
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $brand;
+  color: $black;
+  font-size: 14px;
+  font-weight: bold;
+  &--with-icon {
+    padding: 0px 32px 0px 40px;
+    width: max-content;
+    svg {
+      margin-left: 32px;
+      width: 14px;
+      height: 14px;
+      fill: $black;
+    }
+  }
 }
