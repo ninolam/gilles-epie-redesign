@@ -16,7 +16,7 @@ const ListCard = ({ item, path }) => {
                         <button>Lire plus <span>></span></button> 
                     </Link>
                 </div>
-                <div className="card__image-container" />
+                <div style={{ backgroundImage: `url(${item.picture_url})` }} className="card__image-container" />
             </div>
         </div>
     )

@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import PageList from '../PageList/PageList'
 
-import MainImgSrc from '../../../assets/details-img.png';
-
-
 const PageDetails = ({ computedMatch }) => {
 
     const [item, setItem] = useState({})
@@ -23,7 +20,7 @@ const PageDetails = ({ computedMatch }) => {
         <>
             <div className="page-details mt-content">
                 <h1>{item.title}</h1>
-                <img src={MainImgSrc} alt="" />
+                <img src={item.picture_url} alt="" />
                 {item.ingredients ?
                     <>
                         <h2>Ingrédients <span>(pour {item.number_of_persons} personnes)</span></h2>
@@ -36,8 +33,14 @@ const PageDetails = ({ computedMatch }) => {
                         </ul>
                         {item.dressing &&
                             <>
-                                <h2>Dressing</h2>
+                                <h2>Dressage</h2>
                                 <p>{item.dressing}</p>
+                            </>
+                        }
+                        {item.cooking &&
+                            <>
+                                <h2>Cuisson</h2>
+                                <p>{item.cooking}</p>
                             </>
                         }
                     </>
