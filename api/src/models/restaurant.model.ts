@@ -19,6 +19,10 @@ const restaurantSchema: Schema = new Schema({
     type: String,
     required: true,
   },
+  resume: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     required: true,
@@ -40,10 +44,10 @@ const restaurantSchema: Schema = new Schema({
     required: true,
   },
   phone: {
-    type: Number,
+    type: String,
     required: true,
   },
-  fax: Number,
+  fax: String,
   website: String,
   schedules: {
     type: String,
