@@ -20,9 +20,7 @@ const recipeSchema: Schema = new Schema({
     type: [String],
     required: true,
   },
-  ustensils: {
-    type: [String],
-  },
+  ustensils: [String],
   preparation: {
     type: String,
     required: true,

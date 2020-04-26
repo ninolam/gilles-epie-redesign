@@ -14,7 +14,7 @@ const insertExistingData = (data: any[], Model: any) => {
       console.log(
         `${chalk.yellow("[index.js]")} ${capitalizeFirstLetter(
           collectionName
-        )} item (${chalk.blue(`${i + 1}/${data.length}`)}) exist`
+        )} item (${chalk.blue(`${i + 1}/${data.length}`)}) exist: ${el[key]}`
       );
     } else {
       Model.collection.insertOne(el);
@@ -22,7 +22,7 @@ const insertExistingData = (data: any[], Model: any) => {
       console.log(
         `${chalk.green("[index.js]")} ${capitalizeFirstLetter(
           collectionName
-        )} item (${chalk.blue(`${i + 1}/${data.length}`)}) inserted`
+        )} item (${chalk.blue(`${i + 1}/${data.length}`)}) inserted: ${el[key]}`
       );
     }
   });
