@@ -1,0 +1,17 @@
+.Press {
+  background: $black;
+  padding: 150px 20px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    max-width: 390px;
+    color: $white;
+  }
+  &__text {
+    max-width: 263px;
+    color: $white;
+  }
+}
