@@ -30,7 +30,7 @@ const PageDetails = ({ computedMatch }) => {
                         <ul>
                             {item.ingredients && item.ingredients.map((ingredient, id) => <li key={id}>{ingredient}</li>)}
                         </ul>
-                        <h2>Progression</h2>
+                        <h2>Préparation</h2>
                         <ul>
                             {item.preparation && item.preparation.split('\n').map((preparation, id) => <li key={id}>{preparation}</li>)}
                         </ul>
@@ -45,14 +45,13 @@ const PageDetails = ({ computedMatch }) => {
                     <>
                         <h2>Description</h2>
                         <ul>
-                            {item.content && item.content.split('\n').map((preparation, id) => <li key={id}>{preparation}</li>)}
+                            {item.content && item.content.split('\n').map((paragraph, id) => <li key={id}>{paragraph}</li>)}
                         </ul>
                     </>
                 }
             </div>
             {computedMatch.params.path === "recipes" && <PageList isShowMore currentItem={item._id} path="/recipes" title="Plus de recettes ?" />}
         </>
-
     )
 }
 
