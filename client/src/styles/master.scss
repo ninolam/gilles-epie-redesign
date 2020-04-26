@@ -2,5 +2,13 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 
+@import "../Components/molecules/ListCard/ListCard";
+
 @import "../Components/organisms/Header/Header";
 @import "../Components/organisms/Heading/Heading";
+
+@import "../Components/pages/PageDetails/PageDetails";
+@import "../Components/pages/PageList/PageList";
+
+
+
