@@ -1,10 +1,13 @@
 [
   {
-    "header_pictures": ["https://foo.bar", "https://foo.bar"],
+    "header_pictures": [
+      "https://u.tfstatic.com/restaurant_photos/485/485/169/612/citrus-etoile-vue-d-ensemble-de-la-salle-e3537.jpg",
+      "https://lh3.googleusercontent.com/proxy/gzkTX_gVrQX2Wo1qVmokh3PTufheQDpJN81luucdJ9mu6nf5a8Mbe0MkvQL2Pyp9ox8pf1UwartgPVz6BuTHfgBgfoMCT6RiFJc-ZztP1EmFfYVyYcckjD6P9zqxmpnn7V62QFiv0RqgxjTUKmDW0Y0qYs2ZgBGnX7GEX7kg"
+    ],
     "footer_pictures": [
-      "https://foo.bar",
-      "https://foo.bar",
-      "https://foo.bar"
+      "https://lh3.googleusercontent.com/proxy/RXt7FnOb09dTwkD4LEagG7Z9MX7Tsej7q_1lzTBcNFj4SWUOPgCIiaiAWSTOGCi5O-ZeRvlOfkRo74A1ILKKnmK2DeWTZ-VmglcaNPOVUnAgyS-hLtrOUsF6yWKO9lf_-ZtvHfxQc9rbRNASWE0sv8JETZZPrc7vUoNV_ewu",
+      "https://www.parisgourmand.com/images/stories/aRestos/Citrus9bd.jpg",
+      "https://www.guides-restaurants.fr/wp-content/gallery/restaurant-citrus-etoile/restaurant-citrus-etoile-1.jpg"
     ],
     "title": "Citrus Étoile",
     "subtitle": "Chef Étoile Champs-Élysées Restaurant Paris",
@@ -14,8 +17,26 @@
     "zipcode": 75008,
     "city": "Paris",
     "country": "France",
-    "phone": 142891551,
+    "phone": "+33 1 42 89 15 51",
+    "fax": "+33 1 42 89 28 67",
     "website": "www.citrusetoile.paris",
     "schedules": "Ouvert du Lundi ou Vendredi, de 12h00 à 14H30 et de 19H30 à 22H30."
+  },
+  {
+    "header_pictures": [
+      "https://www.wheretraveler.com/sites/default/files/images/J12.jpg",
+      "https://www.neoz.com.au/media/goodahead/etm/images/gallery/place_image_1/0/0/006-ice-square-100-juvia-miami.jpg"
+    ],
+    "title": "Juvia",
+    "subtitle": "Juvia",
+    "description": "La culture latino-américaine est bien ancrée dans cette ville où résonnent souvent des airs de salsa, et où l’on hume parfois des odeurs de «frijoles negros» (plat cubain). Mais l’un des restaurants les plus prisés de la ville est bien Juvia avec son rooftop face à la mer. L’adresse, très branchée, au mur végétal et aux grandes tablées de quelques 300 couverts, propose un bar à sushis ouvert où s’activent maîtres sushis et quelques 30 cuisiniers qui, depuis peu, sont drivés par le chef exécutif français de renom Gilles Épié. Le cadre de Juvia est enchanteur, la cuisine est raffinée et la carte éclectique. Juvia fait partie des plus beaux rooftops de la ville. Et depuis l’arrivée de Gilles Épié, l’assiette est devenue très prisée. Attention, il y a un dress code à respecter, l’élégance est de mise. Ni tongs, ni débardeur, ni short pour les hommes ne sont acceptés.",
+    "name": "Restaurant JUVIA",
+    "adress": "1111 Lincoln Rd ",
+    "zipcode": 33139,
+    "city": "Miami Beach",
+    "country": "United States",
+    "phone": "+1 305-763-8272",
+    "website": "www.citrusetoile.pari",
+    "schedules": "Ouvert du lundi au vendredi de 18h à 22h et le weekend de 11h30 à 15h et de 16h à 22h"
   }
 ]
