@@ -18,6 +18,8 @@ class InfosController {
     info.name = req.body.name ? req.body.name : info.name;
     info.bio = req.body.bio;
     info.portaits_url = req.body.portaits_url;
+    info.mentors = req.body.mentors;
+    info.fun_facts = req.body.fun_facts;
 
     info.save((err) => {
       if (err) {
@@ -56,6 +58,8 @@ class InfosController {
       info.name = req.body.name ? req.body.name : info.name;
       info.bio = req.body.bio;
       info.portaits_url = req.body.portaits_url;
+      info.mentors = req.body.mentors;
+      info.fun_facts = req.body.fun_facts;
 
       info.save((err2) => {
         if (err2) {
