@@ -103,5 +103,10 @@
     position: absolute;
     right: 0px;
     bottom: 0px;
+    transition: .3s ease-in-out;
+    &:hover {
+      background: $black;
+      color: $white;
+    }
   }
 }

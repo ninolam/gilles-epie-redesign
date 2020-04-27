@@ -14,4 +14,13 @@
     max-width: 263px;
     color: $white;
   }
+  &__link {
+    &:hover {
+      color: $black !important;
+      background: $brand !important;
+      svg {
+        fill: $black !important;
+      }
+    }
+  }
 }
