@@ -1,26 +1,21 @@
-.footer {
-  background: #181b24;
+.Footer {
+  background: $black;
+  padding-left: 20px;
   height: 100vh;
+  width: 100vw;
   display: flex;
+  position: relative;
   &-leftSide {
     width: 50%;
-    margin-top: 100px;
-    color: white;
+    margin-top: 122px;
+    color: $white;
     &__title {
-      margin-left: 50px;
-      margin-right: 125px;
       font-size: 48px;
       font-weight: bold;
-      &-accent {
-        font-family: 'Playfair Display', serif;  
-        color: #ff6f7b;
-        font-weight: normal;
-        font-style: italic;
-      }
+      color: $white;
+      max-width: 471px;
     }
     &__formula {
-      margin-left: 50px;
-      margin-right: 125px;
       margin-top: 35px;
       display: flex;
       flex-direction: column;
@@ -46,23 +41,23 @@
       &-textarea {
         margin-bottom: 0;
         resize: none;
+        height: 30px;
+        max-width: 354px;
         &:focus {
           width: 100%;
         }
       }
       &-button {
-        font-family: 'Karla', sans-serif;
-        margin-top: 70px;
-        color: #181b24;
-        font-size: 15px;
-        background: #ff6f7b;
-        width: 165px;
-        height: 50px;
+        margin-top: 72px;
       }
     }
   }
   &-rightSide {
     background: white;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
     width: 50%;
     &-map {
       width: 100%;
