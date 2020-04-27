@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import PageList from '../PageList/PageList'
 
-import MainImgSrc from '../../../assets/details-img.png';
-
-
 const PageDetails = ({ computedMatch }) => {
 
     const [item, setItem] = useState({})
@@ -23,21 +20,27 @@ const PageDetails = ({ computedMatch }) => {
         <>
             <div className="page-details mt-content">
                 <h1>{item.title}</h1>
-                <img src={MainImgSrc} alt="" />
+                <img src={computedMatch.params.path === "recipes" ? item.picture_url : item.header_picture} alt="" />
                 {item.ingredients ?
                     <>
                         <h2>Ingrédients <span>(pour {item.number_of_persons} personnes)</span></h2>
                         <ul>
                             {item.ingredients && item.ingredients.map((ingredient, id) => <li key={id}>{ingredient}</li>)}
                         </ul>
-                        <h2>Progression</h2>
+                        <h2>Préparation</h2>
                         <ul>
                             {item.preparation && item.preparation.split('\n').map((preparation, id) => <li key={id}>{preparation}</li>)}
                         </ul>
                         {item.dressing &&
                             <>
-                                <h2>Dressing</h2>
+                                <h2>Dressage</h2>
                                 <p>{item.dressing}</p>
+                            </>
+                        }
+                        {item.cooking &&
+                            <>
+                                <h2>Cuisson</h2>
+                                <p>{item.cooking}</p>
                             </>
                         }
                     </>
@@ -45,14 +48,13 @@ const PageDetails = ({ computedMatch }) => {
                     <>
                         <h2>Description</h2>
                         <ul>
-                            {item.content && item.content.split('\n').map((preparation, id) => <li key={id}>{preparation}</li>)}
+                            {item.content && item.content.split('\n').map((paragraph, id) => <li key={id}>{paragraph}</li>)}
                         </ul>
                     </>
                 }
             </div>
-            {computedMatch.params.path === "recipes" && <PageList isShowMore currentItem={item._id} path="/recipes" title="Plus de recettes ?" />}
+            <PageList isShowMore currentItem={item._id} path={"/" + computedMatch.params.path} title={computedMatch.params.path === "recipe" ? "Plus de recettes ?" : "Plus d'articles ?"}/>
         </>
-
     )
 }
 
