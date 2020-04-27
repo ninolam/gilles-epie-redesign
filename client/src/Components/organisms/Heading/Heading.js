@@ -25,10 +25,9 @@ const Heading = ({portraits}) => {
         </div>
         <Link className="Heading__link button-link" to="/contact">Contact</Link>
         <div className="Heading__steps">
-          <div className="Heading__step Heading__step--active"></div>
-          <div className="Heading__step"></div>
-          <div className="Heading__step"></div>
-          <div className="Heading__step"></div>
+          {portraits ? portraits.map((item, id) =>
+            <div className={id == counter ? 'Heading__step Heading__step--active' : 'Heading__step'} key={id}></div>
+          ) : null }
         </div>
         <span className="Heading__scroll">Scroll</span>
       </div>
@@ -41,9 +40,7 @@ const Heading = ({portraits}) => {
         <div className="Heading__images" style={{transform: `translateX(-${100 / 3 * counter}%)`}}>
           {portraits ? portraits.map((portrait, id) =>
             <div className="Heading__image" style={{ backgroundImage: `url(${portrait})` }} key={id}></div>
-          )
-            : null
-          }
+          ) : null }
         </div>
       </div>
     </section>
