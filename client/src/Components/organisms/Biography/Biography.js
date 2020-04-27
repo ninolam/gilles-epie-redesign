@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
 
 const Biography = () => {
+
   return (
     <section className="Biography">
       <div className="Biography__wrapper content-wrapper">

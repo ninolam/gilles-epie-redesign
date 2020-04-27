@@ -70,16 +70,22 @@
       background: $white;
     }
   }
-  &__images {
+  &__portraits {
     width: 33%;
     height: 100%;
     position: absolute;
     right: 0px;
     top: 0px;
     bottom: 0px;
+    overflow: hidden;
+  }
+  &__images {
+    display: flex;
+    width: calc(100% * 3);
+    height: 100%;
+    transition: .3s ease-in-out;
   }
   &__image {
-    background-image: url('../../../assets/img/portrait.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
