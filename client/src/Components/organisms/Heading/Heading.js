@@ -10,14 +10,14 @@ const Heading = () => {
           <h2 className="Heading__subtitle title-h2">Chef étoile restaurant gastronomique <span>Paris</span></h2>
           <p className="Heading__text text-large">Gilles Epié, Chef de cuisine étoilé d'un restaurant gastronomique français situé à Paris</p>
         </div>
-        <Link className="Heading__link button-link">Contact</Link>
+        <Link className="Heading__link button-link" to="/contact">Contact</Link>
         <div className="Heading__steps">
           <div className="Heading__step Heading__step--active"></div>
           <div className="Heading__step"></div>
           <div className="Heading__step"></div>
           <div className="Heading__step"></div>
         </div>
-        <span className="Heading__scroll">Scroll </span>
+        <span className="Heading__scroll">Scroll</span>
       </div>
       <button className="Heading__button button-circular">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">

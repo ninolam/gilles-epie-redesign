@@ -5,14 +5,12 @@ import { Link } from "react-router-dom";
 const Header = () => {
 
   const [ brand ] = useState('Gille Epie')
-
   const [socialItems, setSocialItems] = useState([])
 
   useEffect(() => {
     axios.get("http://localhost:27017/api/socials")
       .then(res => {
         setSocialItems(res.data)
-        console.log(res.data)
       })
   }, []);
 
