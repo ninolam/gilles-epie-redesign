@@ -10,7 +10,7 @@ const infoSchema: Schema = new Schema({
     type: String,
     required: true,
   },
-  portraits_urls: {
+  portraits_url: {
     type: [String],
     required: true,
   },
