@@ -21,7 +21,7 @@ const App = () => {
         <Header />
         <Switch>
           <Home exact path="/" />
-          <Restaurant exact path="/restaurant/:id" title="Restaurant" />
+          <Restaurant path="/restaurant/:id" title="Restaurant" />
           <PageList exact path="/recipes" title="Recettes" />
           <PageList exact path="/articles" title="Press" />
           <PageDetails path="/:path/:id" />
