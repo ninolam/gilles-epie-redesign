@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const ListCard = ({ item, path }) => {
+    console.log(path)
+    const picture = path === "/recipes" ? item.picture_url : item.header_picture
     return (
         <div className="card">
             <div className="card__wrapper">
@@ -16,7 +18,7 @@ const ListCard = ({ item, path }) => {
                         <button>Lire plus <span>></span></button> 
                     </Link>
                 </div>
-                <div style={{ backgroundImage: `url(${item.picture_url})` }} className="card__image-container" />
+                <div style={{ backgroundImage: `url(${picture})` }} className="card__image-container" />
             </div>
         </div>
     )

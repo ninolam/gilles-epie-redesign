@@ -20,7 +20,7 @@ const PageDetails = ({ computedMatch }) => {
         <>
             <div className="page-details mt-content">
                 <h1>{item.title}</h1>
-                <img src={item.picture_url} alt="" />
+                <img src={computedMatch.params.path === "recipes" ? item.picture_url : item.header_picture} alt="" />
                 {item.ingredients ?
                     <>
                         <h2>Ingrédients <span>(pour {item.number_of_persons} personnes)</span></h2>
@@ -53,7 +53,7 @@ const PageDetails = ({ computedMatch }) => {
                     </>
                 }
             </div>
-            {computedMatch.params.path === "recipes" && <PageList isShowMore currentItem={item._id} path="/recipes" title="Plus de recettes ?" />}
+            <PageList isShowMore currentItem={item._id} path={"/" + computedMatch.params.path} title={computedMatch.params.path === "recipe" ? "Plus de recettes ?" : "Plus d'articles ?"}/>
         </>
     )
 }
