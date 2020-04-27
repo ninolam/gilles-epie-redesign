@@ -30,15 +30,11 @@ const StyledButton = styled.button`
         opacity: 0.4;
         cursor: not-allowed;
     }
-    :icon {
-       display: flex;
-       flex-direction: row;
-    }
 `;
 
-const Button = ({type, children, onClick, testid, disabled, icon}) => {
+const Button = ({type, children, onClick, testid, disabled}) => {
     return(
-        <StyledButton type={type} data-testid={testid} onClick={onClick} disabled={disabled} icon={icon}>{children}</StyledButton>
+        <StyledButton type={type} data-testid={testid} onClick={onClick} disabled={disabled}>{children}</StyledButton>
     )
 }
 
@@ -48,7 +44,6 @@ Button.defaultProps = {
     type: 'redButton',
     testid: 'button',
     disabled: false,
-    icon: false,
 };
 
 Button.propTypes = {
