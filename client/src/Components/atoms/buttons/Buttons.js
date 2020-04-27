@@ -47,7 +47,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  /** Optionnal sizes */
+  /** Optionnal types */
  type: PropTypes.oneOf(['blackButton', 'redButton']),
  /** Children as ONE element */
  children: PropTypes.element.isRequired,
