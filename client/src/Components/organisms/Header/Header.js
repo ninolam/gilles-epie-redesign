@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
 
-  const [ brand ] = useState('Gille Epie')
   const [socialItems, setSocialItems] = useState([])
 
   useEffect(() => {
@@ -19,7 +18,7 @@ const Header = () => {
       <div className="Header__wrapper content-wrapper">
         <div className="Header__container">
           <Link to="/">
-            <h1 className="Header__brand">{brand}</h1>
+            <h1 className="Header__brand">Gilles Epie</h1>
           </Link>
           <ul className="Header__items">
             {socialItems.map((socialItem, id) =>
