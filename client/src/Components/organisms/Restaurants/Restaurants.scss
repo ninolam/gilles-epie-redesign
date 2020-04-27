@@ -8,17 +8,14 @@
       .Restaurants__location {
         margin-left: 98px;
       }
-      .Restaurants__image {
-        background-image: url('./../../../../src/assets/img/juvia-restaurant.jpg')
-      }
     }
     &:last-child {
+      .Restaurants__container:first-child {
+        order: 2;
+      }
       .Restaurants__location {
         margin-right: 98px;
         align-self: flex-end;
-      }
-      .Restaurants__image {
-        background-image: url('./../../../../src/assets/img/citrus-etoile-restaurant.jpeg')
       }
     }
   }
