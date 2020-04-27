@@ -13,6 +13,10 @@ const Header = () => {
       })
   }, []);
 
+  const handleClick = () => {
+    document.querySelector('.Menu').classList.add('Menu--active')
+  }
+
   return (
     <header className="Header">
       <div className="Header__wrapper content-wrapper">
@@ -28,7 +32,7 @@ const Header = () => {
             )}
           </ul>
         </div>
-        <button className="Header__burger"></button>
+        <button className="Header__burger" onClick={() => {handleClick()}}></button>
       </div>
     </header>
   );

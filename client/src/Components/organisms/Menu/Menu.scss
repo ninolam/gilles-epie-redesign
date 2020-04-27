@@ -1,0 +1,99 @@
+.Menu {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: $white;
+  padding: 48px 20px;
+  z-index: -1;
+  opacity: 0;
+  transition: .3s ease;
+  &--active {
+    z-index: 100;
+    opacity: 1;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+  &__brand {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: $black !important;
+    margin-top: 14px;
+    &:after {
+      content: ".";
+      color: $brand;
+    }
+  }
+  &__close {
+    background: $white;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      fill: $black;
+      width: 22px;
+      height: 22px;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  &__link {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    color: $black;
+    transition: .3s ease;
+    &:hover {
+      color: $brand;
+    }
+  }
+  &__image {
+    background-image: url('./../../../assets/img/menu.jpg');
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+  }
+  &__button {
+    background: $brand;
+    color: $black;
+    width: 413px;
+    height: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+}

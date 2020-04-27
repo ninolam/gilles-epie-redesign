@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch } from "react-router-dom";
 
 import Footer from "./organisms/Footer/Footer";
 import Header from "./organisms/Header/Header";
+import Menu from "./organisms/Menu/Menu";
 
 import Home from "./pages/Home";
 import PageList from "./pages/PageList/PageList";
@@ -18,6 +19,7 @@ const App = () => {
     <div className="App">
       <Router>
         <Header />
+        <Menu />
         <Switch>
           <Home exact path="/" />
           <PageList exact path="/recipes" title="Recettes" />
