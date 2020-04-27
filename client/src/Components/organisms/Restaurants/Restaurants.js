@@ -10,11 +10,8 @@ const Restaurants = () => {
     axios.get("http://localhost:27017/api/restaurants")
       .then(res => {
         setRestaurants(res.data)
-        
       })
   }, []);
-
-  console.log(restaurants)
 
   return (
     <section className="Restaurants">

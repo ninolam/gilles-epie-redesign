@@ -23,7 +23,7 @@ const Header = () => {
           <ul className="Header__items">
             {socialItems.map((socialItem, id) =>
               <li className="Header__item" key={id}>
-                <a className="Header__link" href={socialItem.url} target="_blank">{socialItem.name}</a>
+                <a className="Header__link" href={socialItem.url} target="_blank" rel="noopener noreferrer">{socialItem.name}</a>
               </li>
             )}
           </ul>

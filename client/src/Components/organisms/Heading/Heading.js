@@ -1,7 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
 
-const Heading = () => {
+import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'
+
+const Heading = ({portraits}) => {
+
+  useEffect(() => {
+    console.log(portraits)
+  }, []);
+
   return (
     <section className="Heading">
       <div className="Heading__wrapper content-wrapper">
@@ -24,7 +31,13 @@ const Heading = () => {
           <path d="M31.3,97.5c-2.6,0-5.1-1-7.1-2.9c-3.9-3.9-3.9-10.3,0-14.2L54.5,50L24.2,19.6c-3.9-3.9-3.9-10.3,0-14.2    c3.9-3.9,10.3-3.9,14.2,0l37.5,37.5c1.9,1.9,2.9,4.4,2.9,7.1s-1.1,5.2-2.9,7.1L38.4,94.6C36.4,96.5,33.8,97.5,31.3,97.5z" />
         </svg>
       </button>
-      <div className="Heading__image"></div>
+      <div className="Heading__images">
+        {/*portraits.length ? portraits.map((portrait, id) =>
+          <div className="Heading__image" style={{ backgroundImage: `url(${portrait[id]})` }}></div>
+        )
+          : null
+        */}
+      </div>
     </section>
   );
 };
