@@ -1,0 +1,53 @@
+.Recipes {
+  display: flex;
+  padding: 150px 0px 292px 20px;
+  position: relative;
+  &__counter {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+    color: $black;
+    margin-bottom: 125px;
+    display: block;
+  }
+  &__title {
+    max-width: 413px;
+    margin-bottom: 61px;
+  }
+  &__texts {
+    max-width: 263px;
+  }
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+    &:last-child {
+      font-weight: initial !important;
+    }
+  }
+  &__image {
+    position: absolute;
+    right: 0px;
+    top: 150px;
+    width: 55%;
+    height: 641px;
+    background-image: url('./../../../assets/details-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__buttons {
+    position: absolute;
+    display: flex;
+    bottom: 3px;
+    left: 0px;
+  }
+  &__button {
+    &:first-child {
+      background: $white !important;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

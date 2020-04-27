@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
-import Footer from "./organisms/Footer";
+import Footer from "./organisms/Footer/Footer";
 import Header from "./organisms/Header/Header";
 
 import Home from "./pages/Home";
