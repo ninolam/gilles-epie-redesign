@@ -8,6 +8,7 @@ import Menu from "./organisms/Menu/Menu";
 import Home from "./pages/Home";
 import PageList from "./pages/PageList/PageList";
 import PageDetails from "./pages/PageDetails/PageDetails";
+import Restaurant from "./pages/Restaurant/Restaurant"
 
 import konami from "../utils/konami.util";
 
@@ -22,6 +23,7 @@ const App = () => {
         <Menu />
         <Switch>
           <Home exact path="/" />
+          <Restaurant path="/restaurant/:id" title="Restaurant" />
           <PageList exact path="/recipes" title="Recettes" />
           <PageList exact path="/articles" title="Press" />
           <PageDetails path="/:path/:id" />
