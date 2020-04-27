@@ -14,16 +14,17 @@
     - [API](#api)
       - [Stack](#stack-1)
       - [Install & Run](#install--run-1)
-  - [IV - Team](#iv---team)
-  - [V - License](#v---license)
+  - [IV - Useful links](#iv---useful-links)
+  - [V - Team](#v---team)
+  - [License](#license)
 
-> As part of a group project at [HETIC](https://hetic.net), we are responsible for redesigning and developing a portfolio. Our choice turned to [Gille Epié](http://www.gillesepie.com/).
+> As part of a **group project** at [HETIC](https://hetic.net), we are responsible for **redesigning** and **developing** a portfolio. Our choice turned to [Gille Epié](http://www.gillesepie.com/).
 
 ## I - Install
 
 ### Requirements
 
-I assume you already have these elements **installed** and **configured**:
+I assume you **already have** these elements **installed** and **configured**:
 
 - Nodejs
 - MongoDB
@@ -84,6 +85,17 @@ The client app will run on port `3000`.
 
 ### API
 
+This API is a **RESTful API** with **CRUD** on all points.
+
+The **routes** are `http://localhost:27017/api`
+- `/recipes`
+- `/restaurants`
+- `/articles`
+- `/socials`
+- `/infos`
+
+You can `PUT`, `POST`, `PATCH` & `DELETE` **each item of each route** directly in [Postman](https://www.postman.com/) app.
+
 #### Stack
 
 - [NodeJS](https://nodejs.org/)
@@ -108,7 +120,12 @@ mongod
 
 The application will run on port `27017`.
 
-## IV - Team
+
+## IV - Useful links
+
+- [Zeplin sketchs](https://app.zeplin.io/project/5ea14eee2bc979ae50730436/dashboard)
+
+## V - Team
 
 - Maxime CHARPENTIER
 - Sophia GOUNANI
@@ -119,6 +136,6 @@ The application will run on port `27017`.
 - Nicolas MARTIN
 - José GUIGNERY TEIXEIRA
 
-## V - License
+## License
 
 Under [MIT](./LICENSE) license.
