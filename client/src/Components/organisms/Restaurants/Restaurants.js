@@ -28,7 +28,7 @@ const Restaurants = () => {
             <div className="Restaurants__container">
               <h2 className="Restaurants__title title-h2">{restaurant.title}</h2>
               <p className="Restaurants__text text-large">{restaurant.resume}</p>
-              <Link className="Restaurants__link button-link--with-icon" to={"/" + restaurant.id}>
+              <Link className="Restaurants__link button-link--with-icon" to={"/" + restaurant._id}>
                 <span>Détails</span>
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
                   <path d="M31.3,97.5c-2.6,0-5.1-1-7.1-2.9c-3.9-3.9-3.9-10.3,0-14.2L54.5,50L24.2,19.6c-3.9-3.9-3.9-10.3,0-14.2    c3.9-3.9,10.3-3.9,14.2,0l37.5,37.5c1.9,1.9,2.9,4.4,2.9,7.1s-1.1,5.2-2.9,7.1L38.4,94.6C36.4,96.5,33.8,97.5,31.3,97.5z" />
