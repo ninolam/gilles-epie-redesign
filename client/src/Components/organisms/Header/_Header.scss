@@ -35,7 +35,11 @@
 	&__link {
 		font-size: 15px;
 		line-height: 1.87;
-		color: $MediumGrey;
+    color: $MediumGrey;
+    transition: .3s ease;
+    &:hover {
+      color: $brand;
+    }
 	}
 	&__burger {
 		width: 48px;
@@ -45,18 +49,28 @@
 		align-items: center;
     justify-content: center;
     background: $white;
+    transition: .2s ease;
 		&:before {
 			content: '';
 			background: $black;
 			width: 22px;
 			height: 2px;
-			margin-bottom: 5px;
+      margin-bottom: 5px;
+      transition: .2s ease;
 		}
 		&:after {
 			width: 22px;
 			content: '';
 			background: $black;
-			height: 2px;
-		}
+      height: 2px;
+      transition: .2s ease;
+    }
+    &:hover {
+      transform: scale(1.1);
+      &:before,
+      &:after {
+        transform: scale(0.8);
+      }
+    }
 	}
 }
