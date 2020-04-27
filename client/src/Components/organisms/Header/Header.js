@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <header className="Header">
-      <div className="Header__wrapper">
+      <div className="Header__wrapper content-wrapper">
         <div className="Header__container">
           <h1 className="Header__brand">Gille Epie</h1>
           <ul className="Header__items">
