@@ -12,16 +12,17 @@ const Restaurant = ({ computedMatch }) => {
             window.scrollTo(0, 0);
         })
     document.title = item.title
-    }, [computedMatch.params.path, computedMatch.params.id, item.title]);
+    }, [computedMatch.params.path, computedMatch.params.id, item.title, item.header_pictures]);
 
     return (
       <div>
         <div className="restaurant_header">
           <h2>{item.title}</h2>
           <div>
-          {[item.header_pictures].map((value, index) => {
+            {item.header_pictures}
+          {/* {item ? item.header_pictures.map((value) => {
             return <img src={value} alt=""/>
-          })}
+          }) : null} */}
           </div>
         </div>
         <div className="restaurant">
