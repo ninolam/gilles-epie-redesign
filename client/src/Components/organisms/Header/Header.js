@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'
+import { Link } from "react-router-dom";
 
 const Header = () => {
+
+  const [socialItems, setSocialItems] = useState([])
+
+  useEffect(() => {
+    axios.get("http://localhost:27017/api/socials")
+      .then(res => {
+        setSocialItems(res.data)
+      })
+  }, []);
+
+  const handleClick = () => {
+    document.querySelector('.Menu').classList.add('Menu--active')
+  }
+
   return (
     <header className="Header">
-      <div className="Header__wrapper">
+      <div className="Header__wrapper content-wrapper">
         <div className="Header__container">
-          <h1 className="Header__brand">Gille Epie</h1>
+          <Link to="/">
+            <h1 className="Header__brand">Gilles Epie</h1>
+          </Link>
           <ul className="Header__items">
-            <li className="Header__item">
-              <a className="Header__link" href="/">Facebook</a>
-            </li>
-            <li className="Header__item">
-              <a className="Header__link" href="/">Twitter</a>
-            </li>
-            <li className="Header__item">
-              <a className="Header__link" href="/">Youtube</a>
-            </li>
-            <li className="Header__item">
-              <a className="Header__link" href="/">Instagram</a>
-            </li>
+            {socialItems.map((socialItem, id) =>
+              <li className="Header__item" key={id}>
+                <a className="Header__link" href={socialItem.url} target="_blank" rel="noopener noreferrer">{socialItem.name}</a>
+              </li>
+            )}
           </ul>
         </div>
-        <button className="Header__burger"></button>
+        <button className="Header__burger" onClick={() => {handleClick()}}></button>
       </div>
     </header>
   );

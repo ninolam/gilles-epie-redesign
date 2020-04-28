@@ -1,4 +1,5 @@
 import { Document } from "mongoose";
+import { StringifyOptions } from "querystring";
 
 export interface IRecipe extends Document {
   title: string;
@@ -19,9 +20,10 @@ export interface IRestaurant extends Document {
   header_pictures: string[];
   footer_pictures: string[];
   description: string;
+  resume: string;
   name: string;
   adress: string;
-  zipcode: string;
+  zipcode: number;
   city: string;
   country: string;
   phone: string;
@@ -50,4 +52,7 @@ export interface ISocial extends Document {
 export interface IInfo extends Document {
   name: string;
   bio: string;
+  portraits_url: string[];
+  mentors: string[];
+  fun_facts: string[];
 }

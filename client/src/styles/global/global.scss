@@ -10,6 +10,16 @@ body {
   margin: 0px;
 }
 
+/***
+Content Wrapper (to have the same grid on the entire site)
+***/
+
+.content-wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0px auto;
+}
+
 
 /***
 Titles
@@ -43,6 +53,11 @@ Titles
   font-size: 36px;
   line-height: 52px;
   letter-spacing: -1.6px;
+  span {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: $brand;
+  }
 }
 .title-h4 {
   font-weight: bold;
@@ -80,3 +95,92 @@ Texts
 .mt-content {
   margin-top: 144px;
 }
+
+
+/***
+Texts
+***/
+
+.button-circular {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $brand;
+  border-radius: 50%;
+  transition: .3s ease-in-out;
+  svg {
+    fill: $black;
+    width: 13px;
+    height: 13px;
+    transition: .3s ease-in-out;
+  }
+  &:hover {
+    color: $white;
+    background: $black;
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.button-square {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $brand;
+  transition: .3s ease-in-out;
+  svg {
+    fill: $black;
+    width: 13px;
+    height: 13px;
+    transition: .3s ease-in-out;
+  }
+  &:hover {
+    color: $white;
+    background: $black;
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.button-link {
+  height: 48px;
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $brand;
+  color: $black;
+  font-size: 14px;
+  font-weight: bold;
+  transition: .3s ease-in-out;
+  &--with-icon {
+    padding: 0px 32px 0px 40px;
+    width: max-content;
+    transition: .3s ease-in-out;
+    svg {
+      margin-left: 32px;
+      width: 14px;
+      height: 14px;
+      fill: $black;
+      transition: .3s ease-in-out;
+    }
+    &:hover {
+      color: $white;
+      background: $black;
+      svg {
+        fill: $white;
+      }
+    }
+  }
+  &:hover {
+    color: $white;
+    background: $black;
+  }
+}
+

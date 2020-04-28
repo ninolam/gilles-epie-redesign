@@ -1,0 +1,73 @@
+.Biography {
+  padding: 150px 20px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &:not(:last-child) {
+      margin-bottom: 96px;
+    }
+  }
+  &__infos {
+    display: flex;
+  }
+  &__info {
+    &:first-child {
+      max-width: 179px;
+    }
+    &:not(:last-child) {
+      margin-right: 51px;
+    }
+    &:last-child {
+      max-width: 243px;
+    }
+    p {
+      &:first-child {
+        font-size: 11px;
+        color: $black;
+        font-weight: bold;
+        line-height: 20px;
+        margin-bottom: 18px;
+      }
+      &:last-child {
+        font-size: 13px;
+        line-height: 18px;
+        color: $MediumGrey;
+      }
+    }
+  }
+  &__label {
+    font-size: 15px;
+    font-weight: bold;
+    color: $black;
+    display: flex;
+    align-items: center;
+    &:before {
+      content: '';
+      height: 2px;
+      width: 10px;
+      background: $black;
+      margin-right: 4px;
+    }
+  }
+  &__texts {
+    max-width: 458px;
+    width: calc(100% - 448px);
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__text {
+    &:last-child {
+      margin-top: 16px;
+    }
+  }
+  &__image {
+    width: 400px;
+    height: 490px;
+    background-image: url('./../../../assets/img/biography.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
