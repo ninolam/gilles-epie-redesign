@@ -14,6 +14,7 @@ const StyledInput = styled.input`
   font-size: 15px;
   line-height: 26px;
   outline: none;
+  margin-bottom:9px;
   
   ::placeholder {
     font-family: Karla;
@@ -27,7 +28,7 @@ const StyledInput = styled.input`
 
 const Input = ({placeholder, testid}) => {
   return(
-    <StyledInput data-testid={testid} placeholder={placeholder} />
+    <StyledInput data-testid={testid} placeholder={placeholder}/>
   )
 }
 
