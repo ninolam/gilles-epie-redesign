@@ -12,9 +12,9 @@ const StyledPresentation = styled.pre`
 `;
 
 
-const Presentation = ({children, onClick, testid}) => {
+const Presentation = ({children, testid}) => {
     return(
-        <StyledPresentation data-testid={testid} onClick={onClick}>{children}</StyledPresentation>
+        <StyledPresentation data-testid={testid}>{children}</StyledPresentation>
     )
 }
 
@@ -27,8 +27,6 @@ Presentation.defaultProps = {
 Presentation.propTypes = {
    /** Children as ONE element */
    children: PropTypes.element.isRequired,
-   /** Callback when clicked */
-   onClick: PropTypes.func.isRequired,
    /** Optionnal testid */
    testid: PropTypes.string,  
   };
