@@ -1,0 +1,25 @@
+import { Meta, Story, Preview, Code, Props } from '@storybook/addon-docs/blocks';
+import { Burger, Close, Arrows } from './Icons.stories.js' ;
+import Icon from '../Components/atoms/icons/Icons';
+
+<Meta title="Atoms|Icons" component={Icon} />
+
+# Icons
+
+This section show you all the icon of the app.
+
+<div style={{ display: 'flex', justifyContent: 'space-between', width: '400px' }}>
+    <Burger onClick={e => alert('Clicked')} />
+    <Close onClick={e => alert('Clicked')} />
+    <Arrows onClick={e => alert('Clicked')} />
+</div>
+
+Now let's see in details !
+
+```javascript
+<Icon type="redButton" onClick={e => alert('Clicked')}></Icon>
+```
+
+# Props
+
+<Props of={Icon} />
