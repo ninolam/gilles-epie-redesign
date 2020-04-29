@@ -11,6 +11,7 @@ const konami = (callback) => {
     "b",
     "a",
   ];
+  let isFounded = false;
   let keys = [];
   window.addEventListener("keydown", (e) => {
     if (e.getModifierState("CapsLock")) {
@@ -25,12 +26,15 @@ const konami = (callback) => {
       keys[keys.length - 1] !== pattern[keys.length - 1] ||
       keys.length > pattern.length
     ) {
+      isFounded = false;
       keys = [];
     } else {
       if (keys.length === pattern.length) {
+        isFounded = true;
         callback();
       }
     }
+    console.log("isfounded = " + isFounded);
   });
 };
 

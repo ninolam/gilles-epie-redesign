@@ -17,6 +17,7 @@ class InfosController {
 
     info.name = req.body.name ? req.body.name : info.name;
     info.bio = req.body.bio;
+    info.picture = req.body.picture;
     info.portraits_url = req.body.portraits_url;
     info.mentors = req.body.mentors;
     info.fun_facts = req.body.fun_facts;
@@ -57,6 +58,8 @@ class InfosController {
 
       info.name = req.body.name ? req.body.name : info.name;
       info.bio = req.body.bio;
+      info.picture = req.body.picture;
+
       info.portraits_url = req.body.portraits_url;
       info.mentors = req.body.mentors;
       info.fun_facts = req.body.fun_facts;
