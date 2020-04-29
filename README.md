@@ -24,6 +24,7 @@
 
 - [Zeplin sketchs](https://app.zeplin.io/project/5ea14eee2bc979ae50730436/dashboard)
 - [Epics & User stories](https://docs.google.com/document/d/1vaWID_KFF5FfbPPCprHcCSBTRMAFMc8QzDJhIuKTBg8)
+- [Storybook](https://blyndusk.github.io/gilles-epie-redesign)
 
 ## II - Install
 
@@ -93,6 +94,7 @@ The client app will run on port `3000`.
 This API is a **RESTful API** with **CRUD** on all points.
 
 The **routes** are `http://localhost:27017/api`
+
 - `/recipes`
 - `/restaurants`
 - `/articles`
@@ -124,7 +126,6 @@ mongod
 ```
 
 The application will run on port `27017`.
-
 
 ## V - Team
 

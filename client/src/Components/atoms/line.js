@@ -4,8 +4,9 @@ import styled from 'styled-components';
 
 const StyledLine = styled.div`
   height:  1px;
-  width: 360px;
+  width: 360px !important;
   background-color: #ffffff;
+  border: 1px solid #181B24;
 `;
 
 const Line = ({testid}) => {
