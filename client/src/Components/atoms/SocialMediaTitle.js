@@ -11,6 +11,7 @@ const StyledSocialMediaTitle = styled.label`
   line-height: 28px;
   color: #979EA6;
   margin-right:53px;
+  max-width: 71px;
 `;
 
 const SocialMediaTitle = ({ children, testid}) => {

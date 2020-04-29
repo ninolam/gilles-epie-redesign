@@ -9,7 +9,7 @@ const StyledInputGroup = styled.div`
     display: flex;
     flex-direction: column;
     height: 46px;
-    width: 362px;
+    width: 362px !important;
     margin-bottom: 36px;
     background-color: #181B24;
 `;

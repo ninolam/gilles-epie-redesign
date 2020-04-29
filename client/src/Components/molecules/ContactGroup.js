@@ -8,9 +8,12 @@ import Button from '../atoms/buttons/Buttons';
 const StyledContactGroup = styled.div`
     display: flex;
     flex-direction: column;
-    width: 362px;
+    align-self: center;
+    width: 362px !important;
     margin-bottom: 36px;
     background-color: #181B24;
+    max-width: 360px;
+
     button {
       margin-top: 44px;
     }
@@ -49,6 +52,8 @@ InputGroup.defaultProps = {
 };
 
 InputGroup.propTypes = {
+ /** Callback when clicked */
+ onClick: PropTypes.func.isRequired,
  /** Optionnal placeholder */
  placeholder: PropTypes.string.isRequired,
  /** Optionnal testid */

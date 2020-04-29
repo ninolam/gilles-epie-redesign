@@ -5,8 +5,10 @@ import styled from 'styled-components';
 import SocialMediaTitle from '../atoms/SocialMediaTitle';
 
 const StyledNavigationGroup = styled.div`
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
+    max-width: 400px;
+    align-self: center;
 `;
 
 const NavigationGroup = ({}) => {
