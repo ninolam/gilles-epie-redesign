@@ -7,7 +7,7 @@ const StyledLabel = styled.label`
   font-family: Playfair Display;
   font-weight: 500;
   font-style: italic;
-  font-size: 48px;
+  font-size: 20px;
   line-height: 60px;
   color: #1d1f22;
   span {
