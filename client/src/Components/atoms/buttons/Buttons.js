@@ -12,6 +12,10 @@ const types = {
         backgroundColor: '#ff6f7b',
         color: '#181b24'
     },
+    whiteButton: {
+        backgroundColor: '#ffffff',
+        color: '#181b24'
+    },
    
 }
 
@@ -48,7 +52,7 @@ Button.defaultProps = {
 
 Button.propTypes = {
   /** Optionnal types */
- type: PropTypes.oneOf(['blackButton', 'redButton']),
+ type: PropTypes.oneOf(['blackButton', 'redButton', 'whiteButton']),
  /** Children as ONE element */
  children: PropTypes.element.isRequired,
  /** Callback when clicked */

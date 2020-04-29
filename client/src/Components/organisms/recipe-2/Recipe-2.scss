@@ -1,0 +1,40 @@
+.Recipe {
+    &__container {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        max-width: 555px;
+    }
+    &__content {
+        margin-top: 36px;
+        margin-left: 68px;
+        max-width: 265px;
+    }
+    &__date {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 23px;
+        font-size: 11px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.8px;
+        margin-bottom: 8px;      
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 27px;
+    }
+    &__illustration {
+        display: block;
+        max-width: 165px;
+        height: auto;
+    }
+}
+button {
+    background-color: black;
+}
