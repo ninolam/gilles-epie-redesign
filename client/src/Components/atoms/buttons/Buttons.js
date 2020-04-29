@@ -44,6 +44,7 @@ Button.defaultProps = {
     type: 'redButton',
     testid: 'button',
     disabled: false,
+    children: 'Button'
 };
 
 Button.propTypes = {

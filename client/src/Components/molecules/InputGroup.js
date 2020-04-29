@@ -9,8 +9,9 @@ const StyledInputGroup = styled.div`
     display: flex;
     flex-direction: column;
     height: 46px;
-    width: 100%;
+    width: 362px;
     margin-bottom: 36px;
+    background-color: #181B24;
 `;
 
 const InputGroup = ({placeholder, testid}) => {

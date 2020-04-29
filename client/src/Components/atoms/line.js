@@ -6,6 +6,7 @@ const StyledLine = styled.div`
   height:  1px;
   width: 360px;
   background-color: #ffffff;
+  border: 1px solid #181B24;
 `;
 
 const Line = ({testid}) => {
