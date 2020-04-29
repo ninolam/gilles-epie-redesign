@@ -1,26 +1,31 @@
 # Gille Epié Portfolio
 
 - [Gille Epié Portfolio](#gille-epi%c3%a9-portfolio)
-  - [I - Install](#i---install)
+  - [I - Useful links](#i---useful-links)
+  - [II - Install](#ii---install)
     - [Requirements](#requirements)
     - [Project installation and configuration](#project-installation-and-configuration)
-  - [II - Workflow Rules](#ii---workflow-rules)
+  - [III - Workflow Rules](#iii---workflow-rules)
     - [Branches](#branches)
     - [Commits](#commits)
-  - [III - App structure](#iii---app-structure)
+  - [IV - App structure](#iv---app-structure)
     - [Client](#client)
       - [Stack](#stack)
       - [Install & Run](#install--run)
     - [API](#api)
       - [Stack](#stack-1)
       - [Install & Run](#install--run-1)
-  - [IV - Useful links](#iv---useful-links)
   - [V - Team](#v---team)
   - [License](#license)
 
 > As part of a **group project** at [HETIC](https://hetic.net), we are responsible for **redesigning** and **developing** a portfolio. Our choice turned to [Gille Epié](http://www.gillesepie.com/).
 
-## I - Install
+## I - Useful links
+
+- [Zeplin sketchs](https://app.zeplin.io/project/5ea14eee2bc979ae50730436/dashboard)
+- [Epics & User stories](https://docs.google.com/document/d/1vaWID_KFF5FfbPPCprHcCSBTRMAFMc8QzDJhIuKTBg8)
+
+## II - Install
 
 ### Requirements
 
@@ -40,7 +45,7 @@ git config core.hooksPath .githooks
 
 ```
 
-## II - Workflow Rules
+## III - Workflow Rules
 
 ### Branches
 
@@ -65,7 +70,7 @@ git config core.hooksPath .githooks
   - `"(Add|Fix|Remove|Update): commit message"`
 - **ELSE**, your commit will be rejected by **Git hooks**
 
-## III - App structure
+## IV - App structure
 
 ### Client
 
@@ -120,10 +125,6 @@ mongod
 
 The application will run on port `27017`.
 
-
-## IV - Useful links
-
-- [Zeplin sketchs](https://app.zeplin.io/project/5ea14eee2bc979ae50730436/dashboard)
 
 ## V - Team
 
