@@ -10,27 +10,22 @@ const Recipes = () => {
     axios.get("http://localhost:27017/api/recipes")
       .then(res => {
         setRecipes(res.data)
-        console.log(res.data)
       })
   }, []);
 
   const handleNext = (recipes) => {
     if (counter < (recipes.length - 1)) {
       setCounter(counter + 1)
-      console.log(counter)
     } else {
       setCounter(0)
-      console.log(counter)
     }
   }
 
   const handlePrev = (recipes) => {
     if (counter === 0) {
       setCounter(recipes.length - 1)
-      console.log(counter)
     } else {
       setCounter(counter - 1)
-      console.log(counter)
     }
   }
 
@@ -50,7 +45,7 @@ const Recipes = () => {
       <div className="Recipes__view">
         <div className="Recipes__images" style={{ transform: `translateX(-${100 / recipes.length * counter}%)` }}>
           {recipes ? recipes.map((recipe, id) =>
-            <div className="Recipes__image" style={{ backgroundImage: `url(${recipe.picture_url})` }}></div>
+            <div className="Recipes__image" style={{ backgroundImage: `url(${recipe.picture_url})` }} key={id}></div>
           ) : null}
         </div>
         <div className="Recipes__buttons">
