@@ -2,8 +2,6 @@ import React from 'react';
 
 const Biography = ({infos}) => {
 
-  console.log(infos)
-
   return (
     <section className="Biography">
       <div className="Biography__wrapper content-wrapper">
