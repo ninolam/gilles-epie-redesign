@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import ContactGroup from '../../molecules/ContactGroup';
-import NavigationGroup from '../../molecules/NavigationGroup';
-import map from '../../../assets/img/map.png'
+import ContactGroup from '../molecules/ContactGroup';
+import NavigationGroup from '../molecules/NavigationGroup';
+import map from '../../assets/img/map.png'
 
 const StyledFooterGroup = styled.div`
   background: #181B24;

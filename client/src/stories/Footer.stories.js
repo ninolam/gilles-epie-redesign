@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterGroup from '../Components/organisms/FooterStorybook/FooterGroup';
+import FooterGroup from '../Components/organisms/FooterGroup';
 
 export default {
   title:"Footer",
