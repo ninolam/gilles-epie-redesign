@@ -12,7 +12,7 @@ const Restaurant = ({ computedMatch }) => {
             window.scrollTo(0, 0);
         })
     document.title = item.title
-    }, [computedMatch.params.path, computedMatch.params.id, item.title, item.header_pictures]);
+    }, [computedMatch.params.path, computedMatch.params.id, item.title]);
 
     return (
       <div>

@@ -14,7 +14,7 @@ const StyledInput = styled.input`
   font-size: 15px;
   line-height: 26px;
   outline: none;
-  margin-bottom:9px;
+  margin-bottom:8px;
   
   ::placeholder {
     font-family: Karla;
