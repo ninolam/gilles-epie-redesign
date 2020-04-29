@@ -3,7 +3,16 @@ import axios from "axios";
 import "./_Restaurant.scss";
 
 const Restaurant = ({ computedMatch }) => {
-  const [item, setItem] = useState([]);
+  const [item, setItem] = useState({})
+  
+    useEffect(() => {  
+      axios.get("http://localhost:27017/api/restaurants/" + computedMatch.params.id)
+          .then(res => {
+            setItem(res.data)
+            window.scrollTo(0, 0);
+        })
+    document.title = item.title
+    }, [computedMatch.params.path, computedMatch.params.id, item.title]);
 
   useEffect(() => {
     axios

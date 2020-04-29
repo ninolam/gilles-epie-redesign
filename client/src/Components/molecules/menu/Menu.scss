@@ -1,0 +1,16 @@
+.Menu {
+    &__container {
+        padding: 0 0 24px 24px;
+
+    }
+    &__item {
+        padding-top: 24px;
+        font-weight: bold;
+    }
+    &__item.--first {
+        color: #ff6f7b;
+    }
+}
+Menu {
+    background-color: red;
+}
