@@ -1,0 +1,28 @@
+import { Meta, Story, Preview, Code, Props } from '@storybook/addon-docs/blocks';
+import { Red, RedIcon, Black, Disabled, RedIconDisabled, Hover } from './Buttons.stories.js' ;
+import Buttons from '../Components/atoms/buttons/Buttons';
+
+<Meta title="Atoms|Buttons" component={Buttons} />
+
+# Buttons
+
+This section describe all variant of Button component. You can play with 2 different colors: `red` and `black`.
+
+<div style={{ display: 'flex', justifyContent: 'space-between', width: '800px' }}>
+    <Red onClick={e => alert('Clicked')} />
+    <RedIcon onClick={e => alert('Clicked')} />
+    <RedIconDisabled onClick={e => alert('Clicked')} />
+    <Black onClick={e => alert('Clicked')} />
+    <RedIconDisabled onClick={e => alert('Clicked')} />
+    <Hover onClick={e => alert('Clicked')} />
+</div>
+
+Now let's see in details !
+
+```javascript
+<Button type="redButton" onClick={e => alert('Clicked')}>Button</Button>
+```
+
+# Props
+
+<Props of={Buttons} />
