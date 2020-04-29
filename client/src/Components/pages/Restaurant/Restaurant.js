@@ -3,13 +3,12 @@ import axios from 'axios'
 import './_Restaurant.scss'
 
 const Restaurant = ({ computedMatch }) => {
-  const [item, setItem] = useState({})
+  const [item, setItem] = useState([]);
   
     useEffect(() => {  
       axios.get("http://localhost:27017/api/restaurants/" + computedMatch.params.id)
           .then(res => {
             setItem(res.data)
-            window.scrollTo(0, 0);
         })
     document.title = item.title
     }, [computedMatch.params.path, computedMatch.params.id, item.title, item.header_pictures]);
@@ -19,10 +18,9 @@ const Restaurant = ({ computedMatch }) => {
         <div className="restaurant_header">
           <h2>{item.title}</h2>
           <div>
-            {item.header_pictures}
-          {/* {item ? item.header_pictures.map((value) => {
-            return <img src={value} alt=""/>
-          }) : null} */}
+            {/* {item ? item.header_pictures.map((value) => {
+              return <img src={value} alt=""/>
+            }) : null} */}
           </div>
         </div>
         <div className="restaurant">

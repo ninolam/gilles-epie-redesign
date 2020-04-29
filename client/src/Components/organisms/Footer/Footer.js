@@ -1,5 +1,5 @@
 import React from 'react'
-import map from '../../../assets/img/map.png'
+import map from '../../../assets/img/map.jpg'
 
 const Footer = () => {
   return (
@@ -16,6 +16,17 @@ const Footer = () => {
         </div>
       </div>
       <div className="Footer-rightSide">
+        <div className="popin">
+          <div className="popin-circle"></div>
+          <div className="popin-square">
+            <p className="popin-square__head">Nous sommes <span className="popin-square__head_underline">ici</span></p>
+            <p>
+              32 Avenue du Grand Bouvelard
+              <br />
+              Paris, 75004
+            </p>
+          </div>
+        </div>
         <img src={map} className="Footer-rightSide-map" alt="Carte" />
       </div>
     </div>
