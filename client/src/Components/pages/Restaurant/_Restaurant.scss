@@ -1,0 +1,39 @@
+
+body {
+  background: #f8f8f8;
+}
+
+.restaurant {
+  background: white;
+  padding: 100px 210px;
+  max-width: 1140px;
+  margin: 0 auto;
+  &_header {
+    background: white;
+    margin: 144px 150px 0;
+    h2 {
+      font-weight: bold;
+      font-size: 24px;
+      letter-spacing: -0.8px;
+      margin: 80px 0 15px;
+    }
+  }
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: -0.8px;
+    margin: 80px 0 85px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-style: italic;
+    color: #ff6f7b;
+  }
+  p {
+      font-size: 18px;
+      line-height: 28px;
+  }
+  &_description {
+    white-space: pre-line;
+  }
+}

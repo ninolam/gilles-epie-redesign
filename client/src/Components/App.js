@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
-import Footer from "./organisms/Footer";
+import Footer from "./organisms/Footer/Footer";
 import Header from "./organisms/Header/Header";
 import Menu from "./organisms/Menu/Menu";
 import Konami from "./organisms/Konami/Konami";
@@ -9,7 +9,7 @@ import Konami from "./organisms/Konami/Konami";
 import Home from "./pages/Home";
 import PageList from "./pages/PageList/PageList";
 import PageDetails from "./pages/PageDetails/PageDetails";
-import Restaurant from "./pages/Restaurant/Restaurant";
+import Restaurant from "./pages/Restaurant/Restaurant"
 
 import konami from "../utils/konami.util";
 
@@ -25,6 +25,7 @@ const App = () => {
       ) : null}
       <Router>
         <Header />
+        <Menu />
         <Switch>
           <Home exact path="/" />
           <Restaurant path="/restaurants/:id" title="Restaurant" />
