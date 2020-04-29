@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledRecipe = styled.section`
-  background-color: #f8f8f8;
   font-family: Karla;
 `;
 
