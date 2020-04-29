@@ -51,7 +51,8 @@ export interface ISocial extends Document {
 
 export interface IInfo extends Document {
   name: string;
-  bio: string;
+  bio: string[];
+  picture: string;
   portraits_url: string[];
   mentors: string[];
   fun_facts: string[];
