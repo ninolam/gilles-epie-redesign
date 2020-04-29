@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'
 
-const Biography = () => {
+const Biography = ({infos}) => {
 
   return (
     <section className="Biography">
@@ -9,11 +10,11 @@ const Biography = () => {
           <div className="Biography__infos">
             <div className="Biography__info">
               <p>Ces mentors</p>
-              <p>Roger Jaloux, Jean-Pierre Coffe, François Clerc</p>
+              <p>{infos.mentors ? infos.mentors.join(', ') : null}</p>
             </div>
             <div className="Biography__info">
               <p>Fun facts</p>
-              <p>Il quitte Paris en 1995 pour explorer l’Amérique – sans maîtriser la langue-, et sa gastronomie. Un an plus tard, il est élu « Le Meilleur Chef Cuisinier » aux Etats – Unis.</p>
+              <p>{infos.fun_facts ? infos.fun_facts[ Math.floor(Math.random() * infos.fun_facts.length) ] : null }</p>
             </div>
           </div>
           <p className="Biography__label">Biographie</p>
