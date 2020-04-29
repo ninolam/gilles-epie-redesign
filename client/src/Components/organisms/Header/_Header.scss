@@ -4,7 +4,16 @@
   top: 0;
   padding: 0px 20px;
   z-index: 10;
+  transition: .3s ease;
+  &--active {
+    background: $white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    .Header__wrapper {
+      height: 96px !important;
+    }
+  }
   &__wrapper {
+    transition: .3s ease;
     height: 144px;
     display: flex;
     align-items: center;

@@ -26,7 +26,7 @@ const Heading = ({portraits}) => {
         <Link className="Heading__link button-link" to="/contact">Contact</Link>
         <div className="Heading__steps">
           {portraits ? portraits.map((item, id) =>
-            <div className={id == counter ? 'Heading__step Heading__step--active' : 'Heading__step'} key={id}></div>
+            <div className={id === counter ? 'Heading__step Heading__step--active' : 'Heading__step'} key={id}></div>
           ) : null }
         </div>
         <span className="Heading__scroll">Scroll</span>
