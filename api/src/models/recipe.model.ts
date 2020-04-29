@@ -6,6 +6,10 @@ const recipeSchema: Schema = new Schema({
     type: String,
     required: true,
   },
+  date: {
+    type: String,
+    required: true,
+  },
   picture_url: {
     type: String,
     required: true,
@@ -16,9 +20,7 @@ const recipeSchema: Schema = new Schema({
     type: [String],
     required: true,
   },
-  ustensils: {
-    type: [String],
-  },
+  ustensils: [String],
   preparation: {
     type: String,
     required: true,
@@ -28,7 +30,3 @@ const recipeSchema: Schema = new Schema({
 });
 
 export default mongoose.model<IRecipe>("Recipe", recipeSchema);
-
-// module.exports.get = function (callback, limit) {
-//   Recipe.find(callback).limit(limit);
-// };

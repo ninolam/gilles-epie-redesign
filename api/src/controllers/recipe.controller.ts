@@ -9,11 +9,7 @@ class RecipeController {
           message: err,
         });
       }
-      res.json({
-        status: "success",
-        message: "Recipes retrieved successfully",
-        data: recipes,
-      });
+      res.send(recipes);
     });
   };
   static create = (req, res) => {
@@ -22,6 +18,7 @@ class RecipeController {
     recipe.title = req.body.title ? req.body.title : recipe.title;
     recipe.picture_url = req.body.picture_url;
     recipe.type = req.body.type;
+    recipe.date = req.body.date;
     recipe.number_of_persons = req.body.number_of_persons;
     recipe.ingredients = req.body.ingredients;
     recipe.ustensils = req.body.ustensils;
@@ -51,11 +48,7 @@ class RecipeController {
           message: err,
         });
       }
-      res.json({
-        status: "success",
-        message: "Recipe details loading..",
-        data: recipe,
-      });
+      res.send(recipe);
     });
   };
   static update = (req, res) => {
@@ -70,6 +63,7 @@ class RecipeController {
       recipe.title = req.body.title ? req.body.title : recipe.title;
       recipe.picture_url = req.body.picture_url;
       recipe.type = req.body.type;
+      recipe.date = req.body.date;
       recipe.number_of_persons = req.body.number_of_persons;
       recipe.ingredients = req.body.ingredients;
       recipe.preparation = req.body.preparation;

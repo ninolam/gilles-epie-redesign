@@ -1,0 +1,15 @@
+.page-list {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#ffffff 30vh, #f8f8f8 30vh);
+    padding-bottom: 100px;
+    &__container {
+        max-width: 1180px;
+        margin: 0 auto;
+        h1.main-title {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: -2px;
+        }
+    }
+}

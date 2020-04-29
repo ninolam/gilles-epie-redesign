@@ -1,29 +1,51 @@
 # Gille Epié Portfolio
 
 - [Gille Epié Portfolio](#gille-epi%c3%a9-portfolio)
-  - [I - Install](#i---install)
-  - [II - Workflow Rules](#ii---workflow-rules)
+  - [I - Useful links](#i---useful-links)
+  - [II - Install](#ii---install)
+    - [Requirements](#requirements)
+    - [Project installation and configuration](#project-installation-and-configuration)
+  - [III - Workflow Rules](#iii---workflow-rules)
     - [Branches](#branches)
     - [Commits](#commits)
-  - [III - App structure](#iii---app-structure)
+  - [IV - App structure](#iv---app-structure)
     - [Client](#client)
       - [Stack](#stack)
       - [Install & Run](#install--run)
     - [API](#api)
       - [Stack](#stack-1)
       - [Install & Run](#install--run-1)
-  - [IV - Team](#iv---team)
-  - [V - License](#v---license)
+  - [V - Team](#v---team)
+  - [License](#license)
 
-## I - Install
+> As part of a **group project** at [HETIC](https://hetic.net), we are responsible for **redesigning** and **developing** a portfolio. Our choice turned to [Gille Epié](http://www.gillesepie.com/).
+
+## I - Useful links
+
+- [Zeplin sketchs](https://app.zeplin.io/project/5ea14eee2bc979ae50730436/dashboard)
+- [Epics & User stories](https://docs.google.com/document/d/1vaWID_KFF5FfbPPCprHcCSBTRMAFMc8QzDJhIuKTBg8)
+
+## II - Install
+
+### Requirements
+
+I assume you **already have** these elements **installed** and **configured**:
+
+- Nodejs
+- MongoDB
+
+### Project installation and configuration
 
 ```bash
 git clone https://github.com/blyndusk/gilles-epie-redesign.git
-git config core.hooksPath .githooks
+# set executable our own commit message rules
 chmod +x ./.githooks/commit-msg
+# add custom config to the git environment
+git config core.hooksPath .githooks
+
 ```
 
-## II - Workflow Rules
+## III - Workflow Rules
 
 ### Branches
 
@@ -48,7 +70,7 @@ chmod +x ./.githooks/commit-msg
   - `"(Add|Fix|Remove|Update): commit message"`
 - **ELSE**, your commit will be rejected by **Git hooks**
 
-## III - App structure
+## IV - App structure
 
 ### Client
 
@@ -64,12 +86,24 @@ npm i
 npm start
 ```
 
+The client app will run on port `3000`.
+
 ### API
+
+This API is a **RESTful API** with **CRUD** on all points.
+
+The **routes** are `http://localhost:27017/api`
+- `/recipes`
+- `/restaurants`
+- `/articles`
+- `/socials`
+- `/infos`
+
+You can `PUT`, `POST`, `PATCH` & `DELETE` **each item of each route** directly in [Postman](https://www.postman.com/) app.
 
 #### Stack
 
 - [NodeJS](https://nodejs.org/)
-- [PostMan](https://www.postman.com/)
 - [MongoDb](https://www.mongodb.com/)
 
 #### Install & Run
@@ -79,16 +113,20 @@ Shell 1:
 ```bash
 cd api
 cp .env.sample .env
-npm i 
+npm i
 npm start
 ```
+
 Shell 2:
 
 ```
 mongod
 ```
 
-## IV - Team
+The application will run on port `27017`.
+
+
+## V - Team
 
 - Maxime CHARPENTIER
 - Sophia GOUNANI
@@ -97,7 +135,8 @@ mongod
 - Nino LAMOUREUX
 - Jason GOUROVITCH
 - Nicolas MARTIN
+- José GUIGNERY TEIXEIRA
 
-## V - License
+## License
 
 Under [MIT](./LICENSE) license.

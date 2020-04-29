@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Facebook",
+    "label": "facebook",
+    "url": "https://www.facebook.com/gillesepie/"
+  },
+  {
+    "name": "Twitter",
+    "label": "twitter",
+    "url": "https://twitter.com/Gilles_Epie"
+  },
+  {
+    "name": "Instagram",
+    "label": "instagram",
+    "url": "https://www.instagram.com/chefgillesepie/"
+  },
+  {
+    "name": "YouTube",
+    "label": "youtube",
+    "url": "https://www.youtube.com/user/gillesepie"
+  },
+  {
+    "name": "Mail",
+    "label": "mail",
+    "url": "mailto:gillesepie@gmail.com"
+  }
+]

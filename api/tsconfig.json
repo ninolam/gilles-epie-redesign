@@ -8,6 +8,6 @@
     "resolveJsonModule": true,
     "sourceMap": true
   },
-  "include": ["s./rc/**/*.ts", "src/index.ts"],
+  "include": ["src/**/*.ts", "__tests__/**/*.ts"],
   "exclude": ["node_modules", ".vscode"]
 }

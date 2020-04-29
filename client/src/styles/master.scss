@@ -1,0 +1,19 @@
+@import "./global/reset.scss";
+@import "./global/variables.scss";
+@import "./global/global.scss";
+
+@import "../Components/molecules/ListCard/ListCard";
+
+// Homepage
+@import "../Components/organisms/Header/Header";
+@import "../Components/organisms/Menu/Menu";
+@import "../Components/organisms/Heading/Heading";
+@import "../Components/organisms/Restaurants/Restaurants";
+@import "../Components/organisms/Press/Press";
+@import "../Components/organisms/Biography/Biography";
+@import "../Components/organisms/Recipes/Recipes";
+@import "../Components/organisms/Footer/Footer";
+@import "../Components/organisms/Konami/Konami";
+
+@import "../Components/pages/PageDetails/PageDetails";
+@import "../Components/pages/PageList/PageList";
