@@ -6,11 +6,10 @@ import BurgerIcon from '../assets/img/burger.png';
 import CloseIcon from '../assets/img/close.png';
 import '../styles/global/reset.scss';
 
-
 export default {
   title: 'IconButtons'
 }
 
 export const Burger = props => <IconButton type='normalButton' src={BurgerIcon} testid="normalButton icon" onClick={props.onClick}></IconButton>;
 export const Close = props => <IconButton type='normalButton' src={CloseIcon} testid="normalButton icon" onClick={props.onClick}></IconButton>;
-export const Arrows = props => <><IconButton id="d" type='normalButton' src={ArrowIcon} testid="normalButton icon" onClick={props.onClick}></IconButton><IconButton type='redButton' src={ArrowIcon} testid="roundIcon icon" onClick={props.onClick}></IconButton><IconButton type='roundIcon' src={ArrowIcon} testid="redButton icon" onClick={props.onClick}></IconButton></>;
+export const Arrows = props => <><IconButton type='normalButton' src={ArrowIcon} testid="normalButton icon" onClick={props.onClick}></IconButton><IconButton type='redButton' src={ArrowIcon} testid="roundIcon icon" onClick={props.onClick}></IconButton><IconButton type='roundIcon' src={ArrowIcon} testid="redButton icon" onClick={props.onClick}></IconButton></>;
