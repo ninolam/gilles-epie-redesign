@@ -1,0 +1,14 @@
+.arrow{display:flex;align-self:flex-start;flex-direction:row;justify-content:center}.arrow-icon{height:20px;display:inline-flex;flex-direction:row;margin-left:10px}.arrow-icon.white{margin-left:0}.arrow.white{justify-content:left}
+
+.Presentation__container{max-width:80%;display:block;padding-right:280px}.Presentation__name{text-transform:uppercase;font-size:11px;line-height:20px;font-weight:bold;margin-bottom:12px}.Presentation__title{font-weight:bold;font-size:48px;line-height:60px;letter-spacing:-2.0px;margin-bottom:27px;width:100%;display:block}.Presentation__deco{color:#ff6f7b;font-family:'Playfair Display', serif;font-style:italic;letter-spacing:.5px}.Presentation__text{font-family:'Lucida Grande', 'Karla';font-size:18px;margin-top:27px;margin-bottom:147px;line-height:28px}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}button{cursor:pointer;outline:none;padding:0;margin:0;background:transparent;border:none}a{text-decoration:none}
+
+.Menu__container{padding:0 0 24px 24px}.Menu__item{padding-top:24px;font-weight:bold}.Menu__item.--first{color:#ff6f7b}Menu{background-color:red}
+
+.Presse__container{display:flex;justify-content:space-between;padding:20px}.Presse__title{display:block;width:390px;font-size:36px;line-height:48px;letter-spacing:-1.6px;font-weight:bold}.Presse__deco{font-family:'Playfair Display', serif;color:#ff6f7b;font-style:italic}.Presse__text{width:263px;display:block;font-size:18px;line-height:32px}
+
+.Recipe__container{background-color:#ffffff;display:flex;justify-content:space-between;max-width:555px}.Recipe__content{margin-top:36px;margin-left:68px;max-width:265px}.Recipe__date{text-transform:uppercase;font-weight:bold;margin-bottom:23px;font-size:11px;line-height:20px;letter-spacing:1px}.Recipe__title{font-size:24px;line-height:36px;letter-spacing:-0.8px;margin-bottom:8px}.Recipe__text{font-size:14px;line-height:20px;margin-bottom:27px}.Recipe__illustration{display:block;max-width:165px;height:auto}button{background-color:black}.--redbtn{width:150px;padding:16px 0px}.--redicon{margin-left:20px}
+
+
+/*# sourceMappingURL=main.7dff201e.chunk.css.map*/

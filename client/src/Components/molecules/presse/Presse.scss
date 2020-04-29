@@ -1,0 +1,27 @@
+.Presse {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    &__title {
+        display: block;
+        width: 390px;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -1.6px;
+        font-weight: bold;
+    }
+    &__deco {
+        font-family: 'Playfair Display', serif;
+        color: #ff6f7b;
+        font-style: italic;
+
+    }
+    &__text {
+        width: 263px;
+        display: block;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
