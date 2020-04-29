@@ -54,6 +54,17 @@
     max-width: 458px;
     width: calc(100% - 448px);
   }
+  &__text {
+    &:first-child {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.8px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
   &__title {
     margin-bottom: 24px;
   }
@@ -65,7 +76,6 @@
   &__image {
     width: 400px;
     height: 490px;
-    background-image: url('./../../../assets/img/biography.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

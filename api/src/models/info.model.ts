@@ -7,6 +7,10 @@ const infoSchema: Schema = new Schema({
     required: true,
   },
   bio: {
+    type: [String],
+    required: true,
+  },
+  picture: {
     type: String,
     required: true,
   },

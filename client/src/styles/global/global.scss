@@ -109,10 +109,19 @@ Texts
   justify-content: center;
   background: $brand;
   border-radius: 50%;
+  transition: .3s ease-in-out;
   svg {
     fill: $black;
     width: 13px;
     height: 13px;
+    transition: .3s ease-in-out;
+  }
+  &:hover {
+    color: $white;
+    background: $black;
+    svg {
+      fill: $white;
+    }
   }
 }
 
@@ -123,10 +132,19 @@ Texts
   align-items: center;
   justify-content: center;
   background: $brand;
+  transition: .3s ease-in-out;
   svg {
     fill: $black;
     width: 13px;
     height: 13px;
+    transition: .3s ease-in-out;
+  }
+  &:hover {
+    color: $white;
+    background: $black;
+    svg {
+      fill: $white;
+    }
   }
 }
 
@@ -140,14 +158,29 @@ Texts
   color: $black;
   font-size: 14px;
   font-weight: bold;
+  transition: .3s ease-in-out;
   &--with-icon {
     padding: 0px 32px 0px 40px;
     width: max-content;
+    transition: .3s ease-in-out;
     svg {
       margin-left: 32px;
       width: 14px;
       height: 14px;
       fill: $black;
+      transition: .3s ease-in-out;
+    }
+    &:hover {
+      color: $white;
+      background: $black;
+      svg {
+        fill: $white;
+      }
     }
   }
+  &:hover {
+    color: $white;
+    background: $black;
+  }
 }
+
