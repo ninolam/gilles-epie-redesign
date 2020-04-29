@@ -53,10 +53,10 @@ const FooterGroup = ({placeholder, testid, onClick}) => {
           styled={styled}
           placeholder={placeholder}
           data-testid={testid}
+          onClick={onClick}
         ></ContactGroup>
         <NavigationGroup></NavigationGroup>
       </div>
-
       <div>
         <img src={map} alt="Carte"/>
       </div>
@@ -65,13 +65,13 @@ const FooterGroup = ({placeholder, testid, onClick}) => {
 }
 
 /* Will show the right 'tag' within documentation */
-ContactGroup.displayName = 'ContactGroup';
-ContactGroup.defaultProps = {
+FooterGroup.displayName = 'FooterGroup';
+FooterGroup.defaultProps = {
   placeholder: 'Type here',
   testid: 'FooterGroup'
 };
 
-ContactGroup.propTypes = {
+FooterGroup.propTypes = {
  /** Callback when clicked */
  onClick: PropTypes.func.isRequired,
  /** Optionnal placeholder */
