@@ -23,11 +23,10 @@ const Restaurant = ({ computedMatch }) => {
     <div>
       <div className="restaurant_header">
         <h2>{item.title}</h2>
-        <div>
-          <img
-            src={item.header_pictures ? item.header_pictures[1] : null}
-            alt=""
-          />
+        <div className="restaurant_header_pictures">
+          {item.header_pictures ? item.header_pictures.map((value) => {
+              return <img className="restaurant_header_pictures_img" src={value} alt=""/>
+            }) : null}
         </div>
       </div>
       <div className="restaurant">
@@ -105,15 +104,13 @@ const Restaurant = ({ computedMatch }) => {
           <br />
           {item.schedules}
         </p>
-        <ul>
+        <div className="restaurant_footer_img_container">
           {item.footer_pictures
             ? item.footer_pictures.map((pic) => (
-                <li>
-                  <img src={pic} />
-                </li>
+                <img className="restaurant_footer_img" src={pic} />
               ))
             : null}
-        </ul>
+        </div>
       </div>
     </div>
   );
