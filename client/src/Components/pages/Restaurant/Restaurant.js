@@ -18,9 +18,7 @@ const Restaurant = ({ computedMatch }) => {
         <div className="restaurant_header">
           <h2>{item.title}</h2>
           <div>
-            {/* {item ? item.header_pictures.map((value) => {
-              return <img src={value} alt=""/>
-            }) : null} */}
+            <img src={item.header_pictures[1]} alt=""/>
           </div>
         </div>
         <div className="restaurant">
