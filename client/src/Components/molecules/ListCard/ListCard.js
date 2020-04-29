@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const ListCard = ({ item, path }) => {
-    console.log(path)
     const picture = path === "/recipes" ? item.picture_url : item.header_picture
     return (
         <div className="card">
