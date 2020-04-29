@@ -23,7 +23,7 @@ const Home = () => {
       <Heading portraits={infos.portraits_url} />
       <Restaurants />
       <Press />
-      <Biography />
+      <Biography infos={infos} />
       <Recipes />
     </div>
   )

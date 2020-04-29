@@ -1,7 +1,8 @@
 .Recipes {
   display: flex;
-  padding: 150px 0px 292px 20px;
+  padding: 150px 0px 150px 20px;
   position: relative;
+  height: 938px;
   &__counter {
     font-size: 11px;
     font-weight: bold;
@@ -25,28 +26,43 @@
       font-weight: initial !important;
     }
   }
-  &__image {
+  &__view {
     position: absolute;
     right: 0px;
     top: 150px;
     width: 55%;
     height: 641px;
-    background-image: url('./../../../assets/details-img.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  &__images {
+    display: flex;
+    width: calc(100% * 5);
+    height: 100%;
+    transition: .3s ease-in-out;
+  }
+  &__image {
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
   }
   &__buttons {
     position: absolute;
     display: flex;
-    bottom: 3px;
+    bottom: 0px;
     left: 0px;
   }
   &__button {
     &:first-child {
-      background: $white !important;
+      background: $white;
       svg {
         transform: rotate(180deg);
+      }
+    }
+    &:hover {
+      &:first-child {
+        background: $black;
       }
     }
   }
