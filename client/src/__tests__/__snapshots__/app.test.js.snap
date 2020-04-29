@@ -1,0 +1,429 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test the render 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="Header"
+  >
+    <div
+      className="Header__wrapper content-wrapper"
+    >
+      <div
+        className="Header__container"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <h1
+            className="Header__brand"
+          >
+            Gilles Epie
+          </h1>
+        </a>
+        <ul
+          className="Header__items"
+        />
+      </div>
+      <button
+        className="Header__burger"
+        onClick={[Function]}
+      />
+    </div>
+  </header>
+  <section
+    className="Menu"
+  >
+    <div
+      className="Menu__wrapper content-wrapper"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <h1
+          className="Menu__brand"
+        >
+          Gilles Epie
+        </h1>
+      </a>
+      <button
+        className="Menu__close"
+        onClick={[Function]}
+      >
+        <svg
+          version="1.1"
+          viewBox="0 0 1024 1000"
+          x="0px"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0px"
+        >
+          <path
+            d="M808.1,265.9c-0.1,12.8-5.7,26.3-14.7,35.4l-0.8,0.8c-6.4,6.5-12.8,12.8-19.2,19.2L582.7,512l210.7,210.7  c9.5,9.5,14.1,22.1,14.7,35.4c0.5,13.4-6,25.8-14.7,35.4c-8.4,9.3-23.1,14.7-35.4,14.7c-12.8-0.1-26.3-5.7-35.4-14.7l-0.8-0.8  c-6.5-6.4-12.8-12.8-19.2-19.2L512,582.7L301.3,793.4c-9.6,9.6-22.1,14.1-35.4,14.7c-13.4,0.5-25.8-6-35.4-14.7  c-9.3-8.4-14.7-23.1-14.7-35.4c0.1-12.8,5.7-26.3,14.7-35.4l0.8-0.8c6.4-6.5,12.8-12.8,19.2-19.2L441.3,512L230.6,301.3  c-9.6-9.6-14.1-22.1-14.7-35.4c-0.5-13.4,6-25.8,14.7-35.4c8.4-9.3,23.1-14.7,35.4-14.7c12.8,0.1,26.3,5.7,35.4,14.7l0.8,0.8  c6.5,6.4,12.8,12.8,19.2,19.2L512,441.3l210.7-210.7c9.5-9.5,22.1-14.1,35.4-14.7c13.4-0.5,25.8,6,35.4,14.7  C802.7,239,808.1,253.6,808.1,265.9z"
+          />
+        </svg>
+      </button>
+      <ul
+        className="Menu__items"
+      >
+        <li
+          className="Menu__item"
+        >
+          <a
+            className="Menu__link"
+            href="/"
+            onClick={[Function]}
+          >
+            Accueil
+          </a>
+        </li>
+        <li
+          className="Menu__item"
+        >
+          <a
+            className="Menu__link"
+            href="/recipes"
+            onClick={[Function]}
+          >
+            Recette
+          </a>
+        </li>
+        <li
+          className="Menu__item"
+        >
+          <a
+            className="Menu__link"
+            href="/articles"
+            onClick={[Function]}
+          >
+            Presse
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="Menu__image"
+    />
+    <a
+      className="Menu__button"
+      href="/contact"
+      onClick={[Function]}
+    >
+      Contact
+    </a>
+  </section>
+  <div
+    className="Home"
+  >
+    <section
+      className="Heading"
+    >
+      <div
+        className="Heading__wrapper content-wrapper"
+      >
+        <div
+          className="Heading__container"
+        >
+          <p
+            className="Heading__title"
+          >
+            Gilles Epie
+          </p>
+          <h2
+            className="Heading__subtitle title-h2"
+          >
+            Chef étoile restaurant gastronomique 
+            <span>
+              Paris
+            </span>
+          </h2>
+          <p
+            className="Heading__text text-large"
+          >
+            Gilles Epié, Chef de cuisine étoilé d'un restaurant gastronomique français situé à Paris
+          </p>
+        </div>
+        <a
+          className="Heading__link button-link"
+          href="/contact"
+          onClick={[Function]}
+        >
+          Contact
+        </a>
+        <div
+          className="Heading__steps"
+        />
+        <span
+          className="Heading__scroll"
+        >
+          Scroll
+        </span>
+      </div>
+      <button
+        className="Heading__button button-circular"
+        onClick={[Function]}
+      >
+        <svg
+          version="1.1"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M31.3,97.5c-2.6,0-5.1-1-7.1-2.9c-3.9-3.9-3.9-10.3,0-14.2L54.5,50L24.2,19.6c-3.9-3.9-3.9-10.3,0-14.2    c3.9-3.9,10.3-3.9,14.2,0l37.5,37.5c1.9,1.9,2.9,4.4,2.9,7.1s-1.1,5.2-2.9,7.1L38.4,94.6C36.4,96.5,33.8,97.5,31.3,97.5z"
+          />
+        </svg>
+      </button>
+      <div
+        className="Heading__portraits"
+      >
+        <div
+          className="Heading__images"
+          style={
+            Object {
+              "transform": "translateX(-0%)",
+            }
+          }
+        />
+      </div>
+    </section>
+    <section
+      className="Restaurants"
+    >
+      <div
+        className="Restaurants__wrapper content-wrapper"
+      />
+    </section>
+    <section
+      className="Press"
+    >
+      <div
+        className="Press__wrapper content-wrapper"
+      >
+        <h3
+          className="Press__title title-h3"
+        >
+          <span>
+            Presse
+          </span>
+           : les articles écris par des médias
+        </h3>
+        <p
+          className="Press__text text-large"
+        >
+          Explorer des article relatant d’experience, de gastronomie et bien plus…
+        </p>
+        <a
+          className="Press__link button-link button-link--with-icon"
+          href="/articles"
+          onClick={[Function]}
+        >
+          <span>
+            Explorer
+          </span>
+          <svg
+            version="1.1"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M31.3,97.5c-2.6,0-5.1-1-7.1-2.9c-3.9-3.9-3.9-10.3,0-14.2L54.5,50L24.2,19.6c-3.9-3.9-3.9-10.3,0-14.2    c3.9-3.9,10.3-3.9,14.2,0l37.5,37.5c1.9,1.9,2.9,4.4,2.9,7.1s-1.1,5.2-2.9,7.1L38.4,94.6C36.4,96.5,33.8,97.5,31.3,97.5z"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section
+      className="Biography"
+    >
+      <div
+        className="Biography__wrapper content-wrapper"
+      >
+        <div
+          className="Biography__container"
+        >
+          <div
+            className="Biography__infos"
+          >
+            <div
+              className="Biography__info"
+            >
+              <p>
+                Ces mentors
+              </p>
+              <p>
+                Roger Jaloux, Jean-Pierre Coffe, François Clerc
+              </p>
+            </div>
+            <div
+              className="Biography__info"
+            >
+              <p>
+                Fun facts
+              </p>
+              <p>
+                Il quitte Paris en 1995 pour explorer l’Amérique – sans maîtriser la langue-, et sa gastronomie. Un an plus tard, il est élu « Le Meilleur Chef Cuisinier » aux Etats – Unis.
+              </p>
+            </div>
+          </div>
+          <p
+            className="Biography__label"
+          >
+            Biographie
+          </p>
+        </div>
+        <div
+          className="Biography__container"
+        >
+          <div
+            className="Biography__texts"
+          >
+            <h4
+              className="Biography__title title-h4"
+            >
+              Gilles Epié, Chef de cuisine étoilé d’un restaurant gastronomique français situé à Paris dévoile sa carrière de top chef à travers cet article.
+            </h4>
+            <p
+              className="Biography__text text-large"
+            >
+              Gilles Epie commence à travailler à l’âge de 14 ans avec Roger Jaloux, le chef emblématique du restaurant Paul Bocuse puis Alain Senderens. Il a ensuite continué sa carrière aux côtés de Jean-Pierre Coffe au restaurant La Ciboulette.
+            </p>
+            <p
+              className="Biography__text text-large"
+            >
+              Ce n’est qu’après avoir voyagé dans le monde entier qu’il retourne à Paris et reçoit une étoile Michelin en 1989 détenant à 22 ans seulement, le record du plus jeune chef étoilé de France. Avant de rejoindre François Clerc à la Vieille Fontaine à Maison Laffite en qualité de chef, ils obtiennent une 2ème étoile Michelin.
+            </p>
+          </div>
+          <div
+            className="Biography__image"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      className="Recipes"
+    >
+      <div
+        className="Recipes__wrapper content-wrapper"
+      >
+        <div
+          className="Recipes__container"
+        >
+          <span
+            className="Recipes__counter"
+          >
+            01 / 04
+          </span>
+          <h2
+            className="Recipes__title title-h2"
+          >
+            Quelques Recettes du 
+            <span>
+              Chef
+            </span>
+          </h2>
+          <div
+            className="Recipes__texts"
+          >
+            <p
+              className="Recipes__text text-medium"
+            >
+              Ravioli de foie gras de canard au jus de daube
+            </p>
+            <p
+              className="Recipes__text text-medium"
+            >
+              Recette gastronomique de ravioli de foie gras Ingrédients (pour 6 personnes) Daube de bœuf 300g de joue de bœuf coupée en morceaux 1 litre de vin rouge 500 ml d’eau…
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Recipes__image"
+      >
+        <div
+          className="Recipes__buttons"
+        >
+          <button
+            className="Recipes__button button-square"
+          >
+            <svg
+              version="1.1"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.3,97.5c-2.6,0-5.1-1-7.1-2.9c-3.9-3.9-3.9-10.3,0-14.2L54.5,50L24.2,19.6c-3.9-3.9-3.9-10.3,0-14.2    c3.9-3.9,10.3-3.9,14.2,0l37.5,37.5c1.9,1.9,2.9,4.4,2.9,7.1s-1.1,5.2-2.9,7.1L38.4,94.6C36.4,96.5,33.8,97.5,31.3,97.5z"
+              />
+            </svg>
+          </button>
+          <button
+            className="Recipes__button button-square"
+          >
+            <svg
+              version="1.1"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.3,97.5c-2.6,0-5.1-1-7.1-2.9c-3.9-3.9-3.9-10.3,0-14.2L54.5,50L24.2,19.6c-3.9-3.9-3.9-10.3,0-14.2    c3.9-3.9,10.3-3.9,14.2,0l37.5,37.5c1.9,1.9,2.9,4.4,2.9,7.1s-1.1,5.2-2.9,7.1L38.4,94.6C36.4,96.5,33.8,97.5,31.3,97.5z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+    className="Footer"
+  >
+    <div
+      className="Footer__wrapper content-wrapper"
+    >
+      <div
+        className="Footer-leftSide"
+      >
+        <p
+          className="Footer-leftSide__title title-h2"
+        >
+          <span>
+            Hello,
+          </span>
+           besoin de quelque chose ?
+        </p>
+        <div
+          className="Footer-leftSide__formula"
+        >
+          <input
+            className="Footer-leftSide__formula-input"
+            placeholder="Nom"
+          />
+          <input
+            className="Footer-leftSide__formula-input"
+            placeholder="Email"
+          />
+          <textarea
+            className="Footer-leftSide__formula-input Footer-leftSide__formula-textarea"
+            placeholder="Message"
+          />
+          <button
+            className="Footer-leftSide__formula-button button-link"
+          >
+            Envoyer
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Footer-rightSide"
+    >
+      <img
+        alt="Carte"
+        className="Footer-rightSide-map"
+        src="map.png"
+      />
+    </div>
+  </div>
+</div>
+`;
